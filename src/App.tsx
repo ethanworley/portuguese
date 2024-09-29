@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Problem, Definition, problems, verbsDictionary } from './Model/Data';
+import { Definition, verbsDictionary } from './Model/Definitions';
+import { Problem, problems } from './Model/Problems';
 import Tooltip from './Components/Tooltip';
 import FeedbackMessage from './Components/FeedbackMessage';
 
@@ -47,7 +47,7 @@ function App() {
       return;
     }
 
-    const isCorrect = currentValue == currentViewModel.problem.answer;
+    const isCorrect = currentValue === currentViewModel.problem.answer;
     if (isCorrect) {
       setFeedback({
         success: true,
@@ -77,7 +77,7 @@ function App() {
         <form onSubmit={checkAnswer} style={{ padding: '20px' }}>
           <h3>
             <Tooltip content={currentViewModel?.definition.description}>
-              <a className="definition" href="#">
+              <a className="definition" href="#definition">
                 {currentViewModel?.problem.verb}
               </a>
             </Tooltip>
