@@ -393,4 +393,156 @@ export const verbsDictionary: { [key: string]: Definition } = {
       description: 'To face or resolve a situation or problem.',
     },
   },
+  viajar: {
+    description: 'Deslocar-se para um lugar distante ou fazer uma viagem.',
+    en: {
+      translation: 'to travel',
+      description: 'To move to a distant place or go on a trip.',
+    },
+  },
+  chegar: {
+    description: 'Alcançar ou atingir um destino ou ponto de chegada.',
+    en: {
+      translation: 'to arrive',
+      description: 'To reach or arrive at a destination or point of arrival.',
+    },
+  },
+  levar: {
+    description: 'Transportar algo ou alguém de um lugar para outro.',
+    en: {
+      translation: 'to take / to carry',
+      description:
+        'To transport something or someone from one place to another.',
+    },
+  },
+  dar: {
+    description: 'Oferecer ou entregar algo a alguém.',
+    en: {
+      translation: 'to give',
+      description: 'To offer or hand something to someone.',
+    },
+  },
+  lavar: {
+    description: 'Limpar algo utilizando água e, geralmente, sabão.',
+    en: {
+      translation: 'to wash',
+      description: 'To clean something using water and usually soap.',
+    },
+  },
+  saber: {
+    description: 'Ter conhecimento ou informação sobre algo.',
+    en: {
+      translation: 'to know',
+      description: 'To have knowledge or information about something.',
+    },
+  },
+  cozinhar: {
+    description: 'Preparar alimentos usando calor.',
+    en: {
+      translation: 'to cook',
+      description: 'To prepare food using heat.',
+    },
+  },
+  estar: {
+    description: 'Encontrar-se em determinado estado, condição ou lugar.',
+    en: {
+      translation: 'to be',
+      description: 'To be in a certain state, condition, or place.',
+    },
+  },
+  marcar: {
+    description: 'Agendar ou definir um horário, local ou evento.',
+    en: {
+      translation: 'to schedule / to set',
+      description: 'To schedule or set a time, place, or event.',
+    },
+  },
+  perder: {
+    description: 'Deixar de possuir ou não conseguir alcançar algo.',
+    en: {
+      translation: 'to lose / to miss',
+      description: 'To no longer possess something or fail to reach something.',
+    },
+  },
+  gostar: {
+    description: 'Sentir apreço, prazer ou satisfação por algo ou alguém.',
+    en: {
+      translation: 'to like',
+      description:
+        'To feel appreciation, pleasure, or satisfaction for something or someone.',
+    },
+  },
+  trazer: {
+    description: 'Levar algo ou alguém para junto do falante.',
+    en: {
+      translation: 'to bring',
+      description: 'To carry something or someone to the speaker.',
+    },
+  },
+  caminhar: {
+    description: 'Mover-se a pé de forma contínua.',
+    en: {
+      translation: 'to walk',
+      description: 'To move on foot continuously.',
+    },
+  },
+  passar: {
+    description: 'Mover algo de um lugar para outro, ou atravessar uma área.',
+    en: {
+      translation: 'to pass / to spend (time)',
+      description:
+        'To move something from one place to another, or to cross an area.',
+    },
+  },
+  escrever: {
+    description: 'Representar palavras ou ideias usando letras ou símbolos.',
+    en: {
+      translation: 'to write',
+      description: 'To represent words or ideas using letters or symbols.',
+    },
+  },
+  lançar: {
+    description: 'Arremessar ou introduzir algo ao público.',
+    en: {
+      translation: 'to launch / to throw',
+      description: 'To throw or introduce something to the public.',
+    },
+  },
+  regar: {
+    description: 'Fornecer água às plantas para mantê-las saudáveis.',
+    en: {
+      translation: 'to water',
+      description: 'To provide water to plants to keep them healthy.',
+    },
+  },
+  visitar: {
+    description:
+      'Ir a um lugar ou encontrar-se com alguém por interesse ou cortesia.',
+    en: {
+      translation: 'to visit',
+      description:
+        'To go to a place or meet with someone out of interest or courtesy.',
+    },
+  },
+  explicar: {
+    description: 'Esclarecer ou tornar algo compreensível.',
+    en: {
+      translation: 'to explain',
+      description: 'To clarify or make something understandable.',
+    },
+  },
+  finalizar: {
+    description: 'Concluir algo que foi iniciado.',
+    en: {
+      translation: 'to finalize / to finish',
+      description: 'To conclude something that was started.',
+    },
+  },
+  pegar: {
+    description: 'Segurar, apanhar ou capturar algo.',
+    en: {
+      translation: 'to catch / to take',
+      description: 'To hold, catch, or grab something.',
+    },
+  },
 };

@@ -10,8 +10,22 @@ test('renders Nova Frase button', () => {
   expect(buttonText).toBeInTheDocument();
 });
 
-test('checks the definitions exist', () => {
+test('checks that definitions exist for all verbs used in problems', () => {
+  const missingVerbs: string[] = [];
+
   problems.forEach((problem) => {
-    expect(verbsDictionary[problem.verb]).not.toBeNull();
+    if (!verbsDictionary[problem.verb]) {
+      missingVerbs.push(problem.verb);
+    }
   });
+
+  // If there are missing definitions, fail the test and report them
+  if (missingVerbs.length > 0) {
+    throw new Error(
+      `Missing definitions for the following verbs: ${missingVerbs.join(', ')}`
+    );
+  }
+
+  // If all definitions exist, the test passes
+  expect(missingVerbs.length).toBe(0);
 });

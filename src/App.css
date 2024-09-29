@@ -1,6 +1,7 @@
 .App {
-  background-color: #282c34;
+  background-color: #223;
   text-align: center;
+  font-size: 1rem;
 }
 
 .App-header {
@@ -33,6 +34,7 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.1s ease;
+  font-size: 1rem;
 }
 
 .input {
@@ -40,7 +42,7 @@
   color: white;
   border-radius: 3px;
   background-color: #fff2;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .button:hover {

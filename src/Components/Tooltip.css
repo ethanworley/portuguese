@@ -15,10 +15,11 @@
   font-size: 14px;
   white-space: normal; /* Allow text to wrap */
   word-wrap: break-word; /* Break words that are too long */
-  width: 80vw; /* Set a maximum width to control tooltip size */
+  width: max-content;
+  max-width: 80vw; /* Set a maximum width to control tooltip size */
   z-index: 1000;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.1s;
 }
 
 /* Show the tooltip */
