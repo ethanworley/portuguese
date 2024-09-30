@@ -14,11 +14,6 @@
   color: white;
 }
 
-.definition {
-  text-decoration: underline dotted;
-  color: white;
-}
-
 .button-container {
   display: flex;
   justify-content: flex-start;

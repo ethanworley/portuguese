@@ -1,23 +1,21 @@
 import React, { ReactNode } from 'react';
 import './Tooltip.css';
+import { Definition } from '../Model/Definitions';
 
 interface TooltipProps {
-  content: ReactNode;
+  word: string;
+  definition?: Definition;
   children: ReactNode;
-  direction?: 'top' | 'bottom' | 'left' | 'right';
 }
 
-const Tooltip: React.FC<TooltipProps> = ({
-  content,
-  children,
-  direction = 'top',
-}) => {
+const Tooltip: React.FC<TooltipProps> = ({ word, definition, children }) => {
   return (
     <div className="tooltip-wrapper">
-      {children}
-      <div className={`tooltip-box tooltip-${direction}`}>
-        {content}
-        <span className={`tooltip-arrow tooltip-arrow-${direction}`} />
+      <a className="tooltip-trigger" href="#definition">
+        {children}
+      </a>
+      <div className="tooltip-box">
+        <strong>{word}:</strong> {definition?.description}
       </div>
     </div>
   );
