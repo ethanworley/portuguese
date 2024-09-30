@@ -12,7 +12,10 @@ export interface KeywordResult {
   count: number;
 }
 
-export const addKeywords = (sentence: string): KeywordResult => {
+export const addKeywords = (
+  sentence: string,
+  inputRef?: React.RefObject<HTMLInputElement>
+): KeywordResult => {
   const words = sentence.split(' ');
   const sentenceElements: (JSX.Element | string)[] = [];
   var count = 0;
@@ -41,6 +44,7 @@ export const addKeywords = (sentence: string): KeywordResult => {
           className="input"
           id="answerInput"
           autoCapitalize="none"
+          ref={inputRef}
         ></input>
       );
     } else {
@@ -77,7 +81,7 @@ function App() {
     const problem = problems[randomIndex];
     const definition = verbsDictionary[problem.verb];
     const viewModel = {
-      sentence: addKeywords(problem.sentence).sentence,
+      sentence: addKeywords(problem.sentence, inputRef).sentence,
       problem: problem,
       definition: definition,
     };
