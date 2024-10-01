@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import './App.css';
 import { Definition, verbsDictionary, keywords } from './Model/Definitions';
 import { Problem, problems, Tense } from './Model/Problems';
@@ -84,7 +84,7 @@ function App() {
     futuro: true,
   });
 
-  const getNewProblem = () => {
+  const getNewProblem = useCallback(() => {
     const filteredProblems = problems.filter(
       (problem) => tenseState[problem.tense as Tense]
     );
@@ -105,7 +105,7 @@ function App() {
       inputRef.current.value = '';
       inputRef.current.focus();
     }
-  };
+  }, [tenseState, inputRef]);
 
   const toggleTense = (tense: Tense) => {
     setTenseState((prevState) => ({
@@ -163,7 +163,7 @@ function App() {
 
   useEffect(() => {
     getNewProblem();
-  }, []);
+  }, [getNewProblem]);
 
   const closeFeedback = (shouldGetNewProblem: boolean) => () => {
     if (shouldGetNewProblem) getNewProblem();
