@@ -57,3 +57,30 @@
     transform: rotate(360deg);
   }
 }
+
+.settings-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.settings-button {
+  background-color: #0000;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-button:hover {
+  background-color: #0000;
+}
+
+.settings-button:active {
+  background-color: #0000;
+}

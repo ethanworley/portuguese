@@ -1,4 +1,4 @@
-type Tense = 'presente' | 'pretérito perfeito' | 'futuro';
+export type Tense = 'presente' | 'pretérito perfeito' | 'futuro';
 
 export interface Problem {
   sentence: string;

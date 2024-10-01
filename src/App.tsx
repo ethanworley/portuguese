@@ -1,9 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import './App.css';
 import { Definition, verbsDictionary, keywords } from './Model/Definitions';
-import { Problem, problems } from './Model/Problems';
+import { Problem, problems, Tense } from './Model/Problems';
 import Tooltip from './Components/Tooltip';
 import FeedbackMessage, { FeedbackResult } from './Components/FeedbackMessage';
+import { ReactComponent as SettingsIcon } from './settingsicon.svg';
+import SettingsMenu from './Components/SettingsMenu';
 
 const locale = 'pt-BR';
 
@@ -75,10 +77,22 @@ function App() {
     result: FeedbackResult.success,
     visible: false,
   });
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [tenseState, setTenseState] = useState<Record<Tense, boolean>>({
+    presente: true,
+    'pretérito perfeito': true,
+    futuro: true,
+  });
 
   const getNewProblem = () => {
-    const randomIndex = Math.floor(Math.random() * problems.length);
-    const problem = problems[randomIndex];
+    const filteredProblems = problems.filter(
+      (problem) => tenseState[problem.tense as Tense]
+    );
+    if (filteredProblems.length === 0) {
+      return;
+    }
+    const randomIndex = Math.floor(Math.random() * filteredProblems.length);
+    const problem = filteredProblems[randomIndex];
     const definition = verbsDictionary[problem.verb];
     const viewModel = {
       sentence: addKeywords(problem.sentence, inputRef).sentence,
@@ -91,6 +105,13 @@ function App() {
       inputRef.current.value = '';
       inputRef.current.focus();
     }
+  };
+
+  const toggleTense = (tense: Tense) => {
+    setTenseState((prevState) => ({
+      ...prevState,
+      [tense]: !prevState[tense],
+    }));
   };
 
   const normalizeAnswer = (text: string) => {
@@ -153,6 +174,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div className="settings-container">
+          <button
+            className="settings-button"
+            onClick={() => setIsSettingsOpen(!isSettingsOpen)}
+          >
+            <SettingsIcon />
+          </button>
+          {isSettingsOpen && (
+            <SettingsMenu tenseState={tenseState} toggleTense={toggleTense} />
+          )}
+        </div>
         <form
           autoComplete="off"
           onSubmit={(e) => checkAnswer(e)}
