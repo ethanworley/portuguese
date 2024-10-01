@@ -3,7 +3,7 @@ import './App.css';
 import { Definition, verbsDictionary, keywords } from './Model/Definitions';
 import { Problem, problems } from './Model/Problems';
 import Tooltip from './Components/Tooltip';
-import FeedbackMessage from './Components/FeedbackMessage';
+import FeedbackMessage, { FeedbackResult } from './Components/FeedbackMessage';
 
 const locale = 'pt-BR';
 
@@ -69,10 +69,10 @@ function App() {
   const [currentViewModel, setCurrentViewModel] = useState<ProblemViewModel>();
   const inputRef = useRef<HTMLInputElement>(null);
   const [feedback, setFeedback] = useState<{
-    success: boolean;
+    result: FeedbackResult;
     visible: boolean;
   }>({
-    success: true,
+    result: FeedbackResult.success,
     visible: false,
   });
 
@@ -93,32 +93,59 @@ function App() {
     }
   };
 
-  const checkAnswer = () => {
+  const normalizeAnswer = (text: string) => {
+    return text.normalize('NFD').trim().toLowerCase();
+  };
+
+  const stripDiacritics = (text: string) => {
+    return text.replace(/[\u0300-\u036f]/g, '');
+  };
+
+  const checkAnswer = (event?: React.FormEvent<HTMLFormElement>) => {
+    event?.preventDefault();
     const currentValue = inputRef.current?.value;
     if (currentValue == null || currentViewModel == null) {
       return;
     }
 
-    const isCorrect = currentValue === currentViewModel.problem.answer;
+    const { answers } = currentViewModel.problem;
+
+    const normalizedUserAnswer = normalizeAnswer(currentValue);
+    const normalizedCorrectAnswers = answers.map(normalizeAnswer);
+
+    const isCorrect = normalizedCorrectAnswers.includes(normalizedUserAnswer);
+
+    const strippedUserAnswer = stripDiacritics(
+      currentValue.trim().toLowerCase()
+    );
+    const isAlmostCorrect =
+      !isCorrect &&
+      normalizedCorrectAnswers.some(
+        (normalizedAnswer) =>
+          stripDiacritics(normalizedAnswer) === strippedUserAnswer
+      );
+
+    var result: FeedbackResult;
     if (isCorrect) {
-      setFeedback({
-        success: true,
-        visible: true,
-      });
-      getNewProblem();
+      result = FeedbackResult.success;
+    } else if (isAlmostCorrect) {
+      result = FeedbackResult.almost;
     } else {
-      setFeedback({
-        success: false,
-        visible: true,
-      });
+      result = FeedbackResult.failure;
     }
+
+    setFeedback({
+      result: result,
+      visible: true,
+    });
   };
 
   useEffect(() => {
     getNewProblem();
   }, []);
 
-  const closeFeedback = () => {
+  const closeFeedback = (shouldGetNewProblem: boolean) => () => {
+    if (shouldGetNewProblem) getNewProblem();
     setFeedback((prev) => ({ ...prev, visible: false }));
     inputRef.current?.focus();
   };
@@ -126,7 +153,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <form onSubmit={checkAnswer} style={{ padding: '20px' }}>
+        <form
+          autoComplete="off"
+          onSubmit={(e) => checkAnswer(e)}
+          style={{ padding: '20px' }}
+        >
           <h3>
             <Tooltip
               word={currentViewModel?.problem.verb ?? ''}
@@ -153,9 +184,11 @@ function App() {
 
       {feedback.visible && (
         <FeedbackMessage
-          success={feedback.success}
-          answer={currentViewModel?.problem.answer ?? ''} // Pass the correct answer to FeedbackMessage
-          onClose={closeFeedback} // Pass the close
+          result={feedback.result}
+          answer={currentViewModel?.problem.answers.join('/') ?? ''}
+          sentence={currentViewModel?.problem.sentence ?? ''}
+          onNextQuestion={closeFeedback(true)}
+          onTryAgain={closeFeedback(false)}
         />
       )}
     </div>

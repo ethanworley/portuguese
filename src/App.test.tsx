@@ -46,3 +46,33 @@ test('checks that sentences contain at least one keyword', () => {
 
   expect(missingKeywordSentences.length).toBe(0);
 });
+
+const prettyPrintProblem = (problem: Problem): string => {
+  return `{ sentence: "${problem.sentence}", verb: "${problem.verb}", tense: ${problem.tense}, answers: ["${problem.answers.join('", "')}"] }`;
+};
+
+test('checks that future tense questions contain at least two answers', () => {
+  const missingAnswersProblems: Problem[] = [];
+
+  problems.forEach((problem) => {
+    if (problem.tense === 'futuro' && problem.answers.length < 2) {
+      missingAnswersProblems.push(problem);
+    }
+  });
+
+  if (missingAnswersProblems.length > 0) {
+    throw new Error(
+      `Missing keywords in the following sentences:\n${missingAnswersProblems.map(prettyPrintProblem).join('\n')}`
+    );
+  }
+
+  expect(missingAnswersProblems.length).toBe(0);
+});
+
+/*
+test('pretty print all problems', () => {
+  throw new Error(
+    `Current problems:\n${problems.map(prettyPrintProblem).join(',\n')}`
+  );
+});
+*/

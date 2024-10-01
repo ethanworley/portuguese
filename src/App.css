@@ -37,7 +37,8 @@
   color: white;
   border-radius: 3px;
   background-color: #fff2;
-  font-size: 1rem;
+  font-size: calc(10px + 2vmin);
+  width: 8em;
 }
 
 .button:hover {

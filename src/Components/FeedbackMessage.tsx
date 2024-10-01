@@ -1,71 +1,124 @@
-// FeedbackMessage.tsx
 import React, { useEffect, useState, useRef } from 'react';
 import './FeedbackMessage.css';
 
-// Define the type for the props of the FeedbackMessage component
-export interface FeedbackMessageProps {
-  success: boolean;
-  answer: string; // The correct answer to be revealed
-  onClose: () => void; // Function to handle closing the feedback message
+export enum FeedbackResult {
+  success,
+  almost,
+  failure,
 }
 
-// FeedbackMessage component
+export interface FeedbackMessageProps {
+  result: FeedbackResult;
+  sentence: string;
+  answer: string;
+  onTryAgain: () => void;
+  onNextQuestion: () => void;
+}
+
 const FeedbackMessage: React.FC<FeedbackMessageProps> = ({
-  success,
+  result,
   answer,
-  onClose,
+  onTryAgain,
+  onNextQuestion,
 }) => {
-  const [emoji, setEmoji] = useState(''); // State to store the emoji
-  const [revealedAnswer, setRevealedAnswer] = useState<string | null>(null); // State to track revealed answer
-  const closeButtonRef = useRef<HTMLButtonElement>(null); // Reference for the close button
+  const [emoji, setEmoji] = useState('');
+  const [revealedAnswer, setRevealedAnswer] = useState<string | null>(null);
+  const tryAgainButtonRef = useRef<HTMLButtonElement>(null);
+  const nextQuestionButtonRef = useRef<HTMLButtonElement>(null);
+  const focusedButtonRef = useRef<HTMLButtonElement | null>(null);
 
-  // Happy and sad emoji arrays
-  const happyEmojis = ['😊', '😃', '🥳', '😄', '🎉'];
-  const sadEmojis = ['😢', '😞', '😔', '🙁', '😟'];
+  useEffect(() => {
+    // Conditionally assign the closeButtonRef to the appropriate button
+    if (result !== FeedbackResult.success) {
+      focusedButtonRef.current = tryAgainButtonRef.current;
+    } else {
+      focusedButtonRef.current = nextQuestionButtonRef.current;
+    }
 
-  // Function to get a random emoji from an array
+    // Focus the assigned button if it exists
+    focusedButtonRef.current?.focus();
+  }, [result]);
+
   const getRandomEmoji = (emojiArray: string[]) => {
     return emojiArray[Math.floor(Math.random() * emojiArray.length)];
   };
 
-  // Update the emoji based on the feedback type
   useEffect(() => {
-    if (success) {
+    const happyEmojis = ['😊', '😃', '🥳', '😄', '🎉'];
+    const sadEmojis = ['😢', '😞', '😔', '🙁', '😟'];
+    if ([FeedbackResult.success, FeedbackResult.almost].includes(result)) {
       setEmoji(getRandomEmoji(happyEmojis));
     } else {
       setEmoji(getRandomEmoji(sadEmojis));
     }
-  }, [success]);
+  }, [result]);
 
-  // Function to reveal the correct answer
+  const getTitleMessage = (result: FeedbackResult) => {
+    switch (result) {
+      case FeedbackResult.success:
+        return 'Mandou bem!';
+      case FeedbackResult.almost:
+        return 'Quase!';
+      case FeedbackResult.failure:
+        return 'Tente novamente!';
+    }
+  };
+
   const revealAnswer = () => {
     setRevealedAnswer(`A resposta correta é: ${answer}"`);
   };
 
-  // Focus the close button when the component is rendered
-  useEffect(() => {
-    if (closeButtonRef.current) {
-      closeButtonRef.current.focus(); // Automatically focus the close button
+  const showRevealAnswerButton = (result: FeedbackResult) => {
+    switch (result) {
+      case FeedbackResult.almost:
+      case FeedbackResult.failure:
+        return true;
+      case FeedbackResult.success:
+        return false;
     }
-  }, []); // Empty dependency array ensures this runs only once when the component mounts
+  };
+
+  const showTryAgainButton = (result: FeedbackResult) => {
+    switch (result) {
+      case FeedbackResult.almost:
+      case FeedbackResult.failure:
+        return true;
+      case FeedbackResult.success:
+        return false;
+    }
+  };
 
   return (
     <div className="feedback-overlay">
       <div className="feedback-container">
         <p>
-          {success ? 'Mandou bem!' : 'Tente novamente!'} {emoji}
+          {getTitleMessage(result)} {emoji}
         </p>
 
         {revealedAnswer && <p>{revealedAnswer}</p>}
 
-        {!success && !revealedAnswer && (
+        {showRevealAnswerButton(result) && !revealedAnswer && (
           <button className="button" onClick={revealAnswer}>
             Revelar Resposta
           </button>
         )}
 
-        <button className="button" onClick={onClose} ref={closeButtonRef}>
-          {success ? 'Próxima Pergunta!' : 'Vou Tentar de Novo!'}
+        {showTryAgainButton(result) && (
+          <button
+            className="button"
+            onClick={onTryAgain}
+            ref={tryAgainButtonRef}
+          >
+            Vou Tentar de Novo!
+          </button>
+        )}
+
+        <button
+          className="button"
+          onClick={onNextQuestion}
+          ref={nextQuestionButtonRef}
+        >
+          Próxima Pergunta!
         </button>
       </div>
     </div>
