@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const explicar: ProblemList = {
+  verb: 'explicar',
+  problems: [
+    {
+      sentence: 'Eu {blank} o projeto para a equipe ontem.',
+      verb: 'explicar',
+      tense: 'pretérito perfeito',
+      answers: ['expliquei'],
+    },
+    {
+      sentence: 'Ela {blank} a matéria para a prova na semana passada.',
+      verb: 'explicar',
+      tense: 'pretérito perfeito',
+      answers: ['explicou'],
+    },
+    {
+      sentence: 'Nós {blank} as regras do jogo durante a reunião.',
+      verb: 'explicar',
+      tense: 'pretérito perfeito',
+      answers: ['explicamos'],
+    },
+    {
+      sentence: 'Você {blank} como funciona o novo sistema, não foi?',
+      verb: 'explicar',
+      tense: 'pretérito perfeito',
+      answers: ['explicou'],
+    },
+    {
+      sentence: 'Eles {blank} as dúvidas que surgiram na aula.',
+      verb: 'explicar',
+      tense: 'pretérito perfeito',
+      answers: ['explicaram'],
+    },
+    {
+      sentence: 'A professora {blank} o tema da redação claramente.',
+      verb: 'explicar',
+      tense: 'pretérito perfeito',
+      answers: ['explicou'],
+    },
+    {
+      sentence: 'Nós {blank} tudo o que precisávamos saber para o evento.',
+      verb: 'explicar',
+      tense: 'pretérito perfeito',
+      answers: ['explicamos'],
+    },
+    {
+      sentence: 'João {blank} a situação para a família.',
+      verb: 'explicar',
+      tense: 'pretérito perfeito',
+      answers: ['explicou'],
+    },
+    {
+      sentence: 'Vocês {blank} o motivo da mudança de planos.',
+      verb: 'explicar',
+      tense: 'pretérito perfeito',
+      answers: ['explicaram'],
+    },
+    {
+      sentence: 'Maria {blank} sobre a importância da leitura para os alunos.',
+      verb: 'explicar',
+      tense: 'pretérito perfeito',
+      answers: ['explicou'],
+    },
+    {
+      sentence: 'Eu {blank} a lição de matemática todos os dias.',
+      verb: 'explicar',
+      tense: 'presente',
+      answers: ['explico'],
+    },
+    {
+      sentence: 'Ela {blank} as regras do jogo com paciência.',
+      verb: 'explicar',
+      tense: 'presente',
+      answers: ['explica'],
+    },
+    {
+      sentence: 'Nós {blank} nossas ideias sobre o projeto.',
+      verb: 'explicar',
+      tense: 'presente',
+      answers: ['explicamos'],
+    },
+    {
+      sentence: 'Você {blank} muito bem o conceito de gravidade.',
+      verb: 'explicar',
+      tense: 'presente',
+      answers: ['explica'],
+    },
+    {
+      sentence: 'Eles {blank} as instruções em português.',
+      verb: 'explicar',
+      tense: 'presente',
+      answers: ['explicam'],
+    },
+    {
+      sentence: 'João {blank} os objetivos da reunião claramente.',
+      verb: 'explicar',
+      tense: 'presente',
+      answers: ['explica'],
+    },
+    {
+      sentence: 'Maria e eu {blank} as etapas do processo.',
+      verb: 'explicar',
+      tense: 'presente',
+      answers: ['explicamos'],
+    },
+    {
+      sentence: 'Você e sua amiga {blank} o conteúdo da aula para os outros.',
+      verb: 'explicar',
+      tense: 'presente',
+      answers: ['explicam'],
+    },
+    {
+      sentence: 'Ela e eu {blank} sobre a importância da reciclagem.',
+      verb: 'explicar',
+      tense: 'presente',
+      answers: ['explicamos'],
+    },
+    {
+      sentence: 'Os professores {blank} o tema do projeto aos alunos.',
+      verb: 'explicar',
+      tense: 'presente',
+      answers: ['explicam'],
+    },
+    {
+      sentence: 'Nós {blank} a lição de casa amanhã.',
+      verb: 'explicar',
+      tense: 'futuro',
+      answers: ['explicaremos', 'vamos explicar'],
+    },
+    {
+      sentence: 'Você {blank} o conceito na próxima aula.',
+      verb: 'explicar',
+      tense: 'futuro',
+      answers: ['explicará', 'vai explicar'],
+    },
+    {
+      sentence: 'Ela {blank} as normas do projeto no sábado.',
+      verb: 'explicar',
+      tense: 'futuro',
+      answers: ['explicará', 'vai explicar'],
+    },
+    {
+      sentence: 'Eu {blank} a tarefa para você na próxima sessão.',
+      verb: 'explicar',
+      tense: 'futuro',
+      answers: ['explicarei', 'vou explicar'],
+    },
+    {
+      sentence: 'Eles {blank} os benefícios do programa na reunião.',
+      verb: 'explicar',
+      tense: 'futuro',
+      answers: ['explicarão', 'vão explicar'],
+    },
+    {
+      sentence: 'Vocês {blank} a proposta de forma clara amanhã.',
+      verb: 'explicar',
+      tense: 'futuro',
+      answers: ['explicarão', 'vão explicar'],
+    },
+    {
+      sentence: 'Maria e eu {blank} a metodologia no próximo encontro.',
+      verb: 'explicar',
+      tense: 'futuro',
+      answers: ['explicaremos', 'vamos explicar'],
+    },
+    {
+      sentence:
+        'O professor {blank} a matéria para os alunos na próxima semana.',
+      verb: 'explicar',
+      tense: 'futuro',
+      answers: ['explicará', 'vai explicar'],
+    },
+    {
+      sentence: 'João {blank} o tema no seminário na quarta-feira.',
+      verb: 'explicar',
+      tense: 'futuro',
+      answers: ['explicará', 'vai explicar'],
+    },
+    {
+      sentence: 'Nós {blank} as regras do jogo antes do início.',
+      verb: 'explicar',
+      tense: 'futuro',
+      answers: ['explicaremos', 'vamos explicar'],
+    },
+  ],
+};

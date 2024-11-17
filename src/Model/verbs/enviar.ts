@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const enviar: ProblemList = {
+  verb: 'enviar',
+  problems: [
+    {
+      sentence: 'Eu {blank} a carta ontem à noite.',
+      verb: 'enviar',
+      tense: 'pretérito perfeito',
+      answers: ['enviei'],
+    },
+    {
+      sentence: 'Ela {blank} todos os relatórios na semana passada.',
+      verb: 'enviar',
+      tense: 'pretérito perfeito',
+      answers: ['enviou'],
+    },
+    {
+      sentence: 'Nós {blank} os presentes para os amigos no Natal.',
+      verb: 'enviar',
+      tense: 'pretérito perfeito',
+      answers: ['enviamos'],
+    },
+    {
+      sentence: 'Você {blank} a mensagem para o grupo rapidamente.',
+      verb: 'enviar',
+      tense: 'pretérito perfeito',
+      answers: ['enviou'],
+    },
+    {
+      sentence: 'Os professores {blank} as avaliações para os alunos.',
+      verb: 'enviar',
+      tense: 'pretérito perfeito',
+      answers: ['enviaram'],
+    },
+    {
+      sentence: 'Maria {blank} o convite para a festa.',
+      verb: 'enviar',
+      tense: 'pretérito perfeito',
+      answers: ['enviou'],
+    },
+    {
+      sentence: 'João {blank} o projeto antes do prazo final.',
+      verb: 'enviar',
+      tense: 'pretérito perfeito',
+      answers: ['enviou'],
+    },
+    {
+      sentence: 'Você e eu {blank} as fotos da viagem para a família.',
+      verb: 'enviar',
+      tense: 'pretérito perfeito',
+      answers: ['enviamos'],
+    },
+    {
+      sentence: 'Eles {blank} os documentos necessários para a aplicação.',
+      verb: 'enviar',
+      tense: 'pretérito perfeito',
+      answers: ['enviaram'],
+    },
+    {
+      sentence: 'A equipe {blank} o relatório completo para a diretoria.',
+      verb: 'enviar',
+      tense: 'pretérito perfeito',
+      answers: ['enviou'],
+    },
+    {
+      sentence: 'Eu {blank} o relatório para o chefe hoje.',
+      verb: 'enviar',
+      tense: 'presente',
+      answers: ['envio'],
+    },
+    {
+      sentence: 'Você {blank} os detalhes da viagem por [e-mail]?',
+      verb: 'enviar',
+      tense: 'presente',
+      answers: ['envia'],
+    },
+    {
+      sentence: 'Ela {blank} os convites para a festa amanhã.',
+      verb: 'enviar',
+      tense: 'presente',
+      answers: ['envia'],
+    },
+    {
+      sentence: 'Nós {blank} as respostas do questionário antes do prazo.',
+      verb: 'enviar',
+      tense: 'presente',
+      answers: ['enviamos'],
+    },
+    {
+      sentence: 'Eles {blank} muitos documentos por fax sempre.',
+      verb: 'enviar',
+      tense: 'presente',
+      answers: ['enviam'],
+    },
+    {
+      sentence: 'Você e eu {blank} as informações corretas ao cliente.',
+      verb: 'enviar',
+      tense: 'presente',
+      answers: ['enviamos'],
+    },
+    {
+      sentence: 'João {blank} as fotos do evento para os amigos.',
+      verb: 'enviar',
+      tense: 'presente',
+      answers: ['envia'],
+    },
+    {
+      sentence: 'Maria {blank} um [e-mail] para a equipe semanalmente.',
+      verb: 'enviar',
+      tense: 'presente',
+      answers: ['envia'],
+    },
+    {
+      sentence: 'Vocês {blank} atualizações sobre o projeto frequentemente.',
+      verb: 'enviar',
+      tense: 'presente',
+      answers: ['enviam'],
+    },
+    {
+      sentence: 'Eu e você {blank} os arquivos importantes pelo aplicativo.',
+      verb: 'enviar',
+      tense: 'presente',
+      answers: ['enviamos'],
+    },
+    {
+      sentence: 'Eu {blank} o relatório amanhã.',
+      verb: 'enviar',
+      tense: 'futuro',
+      answers: ['envierei', 'vou enviar'],
+    },
+    {
+      sentence: 'Você {blank} as informações por [e-mail] na próxima semana.',
+      verb: 'enviar',
+      tense: 'futuro',
+      answers: ['enviará', 'vai enviar'],
+    },
+    {
+      sentence: 'Nós {blank} os convites para a festa em breve.',
+      verb: 'enviar',
+      tense: 'futuro',
+      answers: ['enviamos', 'vamos enviar'],
+    },
+    {
+      sentence: 'Ela {blank} os documentos para a análise amanhã.',
+      verb: 'enviar',
+      tense: 'futuro',
+      answers: ['enviará', 'vai enviar'],
+    },
+    {
+      sentence: 'Eles {blank} os resultados do projeto na semana que vem.',
+      verb: 'enviar',
+      tense: 'futuro',
+      answers: ['enviarão', 'vão enviar'],
+    },
+    {
+      sentence: 'Você e eu {blank} as fotos do evento amanhã.',
+      verb: 'enviar',
+      tense: 'futuro',
+      answers: ['enviamos', 'vamos enviar'],
+    },
+    {
+      sentence: 'João {blank} a proposta para a reunião na sexta-feira.',
+      verb: 'enviar',
+      tense: 'futuro',
+      answers: ['enviará', 'vai enviar'],
+    },
+    {
+      sentence: 'Ana e Carla {blank} os detalhes do planejamento em breve.',
+      verb: 'enviar',
+      tense: 'futuro',
+      answers: ['enviarão', 'vão enviar'],
+    },
+    {
+      sentence: 'Eu e você {blank} os convites até o fim do dia.',
+      verb: 'enviar',
+      tense: 'futuro',
+      answers: ['enviamos', 'vamos enviar'],
+    },
+    {
+      sentence:
+        'O diretor {blank} as instruções para o evento na próxima reunião.',
+      verb: 'enviar',
+      tense: 'futuro',
+      answers: ['enviará', 'vai enviar'],
+    },
+  ],
+};

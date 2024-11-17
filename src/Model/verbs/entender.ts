@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const entender: ProblemList = {
+  verb: 'entender',
+  problems: [
+    {
+      sentence: 'Eu {blank} a lição de casa ontem à noite.',
+      verb: 'entender',
+      tense: 'pretérito perfeito',
+      answers: ['entendi'],
+    },
+    {
+      sentence: 'Ela {blank} tudo sobre o projeto na reunião.',
+      verb: 'entender',
+      tense: 'pretérito perfeito',
+      answers: ['entendeu'],
+    },
+    {
+      sentence: 'Nós {blank} as instruções depois de revisar o material.',
+      verb: 'entender',
+      tense: 'pretérito perfeito',
+      answers: ['entendemos'],
+    },
+    {
+      sentence: 'Você {blank} a matéria para o teste na semana passada.',
+      verb: 'entender',
+      tense: 'pretérito perfeito',
+      answers: ['entendeu'],
+    },
+    {
+      sentence: 'Eles {blank} a situação e decidiram atuar.',
+      verb: 'entender',
+      tense: 'pretérito perfeito',
+      answers: ['entenderam'],
+    },
+    {
+      sentence: 'Maria {blank} a gravidade da situação após a explicação.',
+      verb: 'entender',
+      tense: 'pretérito perfeito',
+      answers: ['entendeu'],
+    },
+    {
+      sentence: 'João {blank} todos os conceitos apresentados na aula.',
+      verb: 'entender',
+      tense: 'pretérito perfeito',
+      answers: ['entendeu'],
+    },
+    {
+      sentence: 'Nós {blank} a importância daquele evento para a comunidade.',
+      verb: 'entender',
+      tense: 'pretérito perfeito',
+      answers: ['entendemos'],
+    },
+    {
+      sentence: 'Vocês {blank} as regras do jogo antes de começarem a jogar.',
+      verb: 'entender',
+      tense: 'pretérito perfeito',
+      answers: ['entenderam'],
+    },
+    {
+      sentence: 'Você e eu {blank} o que era esperado de nós naquele momento.',
+      verb: 'entender',
+      tense: 'pretérito perfeito',
+      answers: ['entendemos'],
+    },
+    {
+      sentence: 'Eu {blank} o que você está dizendo.',
+      verb: 'entender',
+      tense: 'presente',
+      answers: ['entendo'],
+    },
+    {
+      sentence: 'Ela {blank} muito bem as instruções.',
+      verb: 'entender',
+      tense: 'presente',
+      answers: ['entende'],
+    },
+    {
+      sentence: 'Nós {blank} a situação atual do projeto.',
+      verb: 'entender',
+      tense: 'presente',
+      answers: ['entendemos'],
+    },
+    {
+      sentence: 'Você {blank} os conceitos apresentados na aula.',
+      verb: 'entender',
+      tense: 'presente',
+      answers: ['entende'],
+    },
+    {
+      sentence: 'Eles {blank} que a tarefa é importante.',
+      verb: 'entender',
+      tense: 'presente',
+      answers: ['entendem'],
+    },
+    {
+      sentence: 'Maria {blank} melhor depois da explicação.',
+      verb: 'entender',
+      tense: 'presente',
+      answers: ['entende'],
+    },
+    {
+      sentence: 'Carlos e eu {blank} bem a mensagem.',
+      verb: 'entender',
+      tense: 'presente',
+      answers: ['entendemos'],
+    },
+    {
+      sentence: 'Vocês {blank} as regras do jogo?',
+      verb: 'entender',
+      tense: 'presente',
+      answers: ['entendem'],
+    },
+    {
+      sentence: 'João {blank} a importância de estudar regularmente.',
+      verb: 'entender',
+      tense: 'presente',
+      answers: ['entende'],
+    },
+    {
+      sentence: 'Meu irmão {blank} tudo o que acontece na escola.',
+      verb: 'entender',
+      tense: 'presente',
+      answers: ['entende'],
+    },
+    {
+      sentence: 'Eu {blank} a matéria antes do exame.',
+      verb: 'entender',
+      tense: 'futuro',
+      answers: ['entenderei', 'vou entender'],
+    },
+    {
+      sentence: 'Ela {blank} todos os conceitos na aula de amanhã.',
+      verb: 'entender',
+      tense: 'futuro',
+      answers: ['entenderá', 'vai entender'],
+    },
+    {
+      sentence: 'Nós {blank} melhor as instruções no próximo encontro.',
+      verb: 'entender',
+      tense: 'futuro',
+      answers: ['entenderemos', 'vamos entender'],
+    },
+    {
+      sentence: 'Eles {blank} a explicação do professor na semana que vem.',
+      verb: 'entender',
+      tense: 'futuro',
+      answers: ['entenderão', 'vão entender'],
+    },
+    {
+      sentence: 'Você {blank} tudo o que eu disser na próxima vez.',
+      verb: 'entender',
+      tense: 'futuro',
+      answers: ['entenderá', 'vai entender'],
+    },
+    {
+      sentence: 'Eu {blank} o seu ponto de vista na reunião de amanhã.',
+      verb: 'entender',
+      tense: 'futuro',
+      answers: ['entenderei', 'vou entender'],
+    },
+    {
+      sentence: 'Ela e eu {blank} as regras do jogo no próximo encontro.',
+      verb: 'entender',
+      tense: 'futuro',
+      answers: ['entenderemos', 'vamos entender'],
+    },
+    {
+      sentence:
+        'Você e seu amigo {blank} o tema da apresentação posteriormente.',
+      verb: 'entender',
+      tense: 'futuro',
+      answers: ['entenderão', 'vão entender'],
+    },
+    {
+      sentence: 'A professora {blank} a dúvida dos alunos na próxima aula.',
+      verb: 'entender',
+      tense: 'futuro',
+      answers: ['entenderá', 'vai entender'],
+    },
+    {
+      sentence: 'Nós {blank} como resolver o problema até lá.',
+      verb: 'entender',
+      tense: 'futuro',
+      answers: ['entenderemos', 'vamos entender'],
+    },
+  ],
+};

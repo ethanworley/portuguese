@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const admitir: ProblemList = {
+  verb: 'admitir',
+  problems: [
+    {
+      sentence: 'Eu {blank} o meu erro durante a reunião.',
+      verb: 'admitir',
+      tense: 'pretérito perfeito',
+      answers: ['admiti'],
+    },
+    {
+      sentence: 'Ela {blank} que estava errada sobre a situação.',
+      verb: 'admitir',
+      tense: 'pretérito perfeito',
+      answers: ['admitiu'],
+    },
+    {
+      sentence: 'Nós {blank} que deveríamos ter agido diferente.',
+      verb: 'admitir',
+      tense: 'pretérito perfeito',
+      answers: ['admitimos'],
+    },
+    {
+      sentence: 'Você {blank} a verdade para mim no último encontro.',
+      verb: 'admitir',
+      tense: 'pretérito perfeito',
+      answers: ['admitiu'],
+    },
+    {
+      sentence: 'Eles {blank} suas falhas durante a entrevista.',
+      verb: 'admitir',
+      tense: 'pretérito perfeito',
+      answers: ['admitiram'],
+    },
+    {
+      sentence: 'Maria {blank} ter cometido um erro no relatório.',
+      verb: 'admitir',
+      tense: 'pretérito perfeito',
+      answers: ['admitiu'],
+    },
+    {
+      sentence: 'João {blank} sua participação no projeto.',
+      verb: 'admitir',
+      tense: 'pretérito perfeito',
+      answers: ['admitiu'],
+    },
+    {
+      sentence: 'Vocês {blank} as dificuldades enfrentadas.',
+      verb: 'admitir',
+      tense: 'pretérito perfeito',
+      answers: ['admitiram'],
+    },
+    {
+      sentence: 'Nós {blank} que precisávamos de ajuda para o trabalho.',
+      verb: 'admitir',
+      tense: 'pretérito perfeito',
+      answers: ['admitimos'],
+    },
+    {
+      sentence: 'A professora {blank} que os alunos estavam certos.',
+      verb: 'admitir',
+      tense: 'pretérito perfeito',
+      answers: ['admitiu'],
+    },
+    {
+      sentence: 'Eu {blank} o novo funcionário na próxima semana.',
+      verb: 'admitir',
+      tense: 'futuro',
+      answers: ['admitirei', 'vou admitir'],
+    },
+    {
+      sentence: 'Ela {blank} todos os candidatos amanhã.',
+      verb: 'admitir',
+      tense: 'futuro',
+      answers: ['admitirá', 'vai admitir'],
+    },
+    {
+      sentence: 'Nós {blank} vários estagiários no verão.',
+      verb: 'admitir',
+      tense: 'futuro',
+      answers: ['admitiremos', 'vamos admitir'],
+    },
+    {
+      sentence: 'Vocês {blank} novas ideias para o projeto em breve.',
+      verb: 'admitir',
+      tense: 'futuro',
+      answers: ['admitirão', 'vão admitir'],
+    },
+    {
+      sentence: 'Eu {blank} a proposta na próxima reunião.',
+      verb: 'admitir',
+      tense: 'futuro',
+      answers: ['admitirei', 'vou admitir'],
+    },
+    {
+      sentence: 'Eles {blank} os erros cometidos na apresentação.',
+      verb: 'admitir',
+      tense: 'futuro',
+      answers: ['admitirão', 'vão admitir'],
+    },
+    {
+      sentence: 'Tu {blank} os desafios do novo projeto amanhã.',
+      verb: 'admitir',
+      tense: 'futuro',
+      answers: ['admitirás', 'vais admitir'],
+    },
+    {
+      sentence: 'Ana e Carla {blank} a necessidade de mudanças na equipe.',
+      verb: 'admitir',
+      tense: 'futuro',
+      answers: ['admitirão', 'vão admitir'],
+    },
+    {
+      sentence: 'Você {blank} a verdade sobre o ocorrido na próxima semana.',
+      verb: 'admitir',
+      tense: 'futuro',
+      answers: ['admitirá', 'vai admitir'],
+    },
+    {
+      sentence:
+        'Nós {blank} um novo presidente para a comissão no próximo mês.',
+      verb: 'admitir',
+      tense: 'futuro',
+      answers: ['admitiremos', 'vamos admitir'],
+    },
+    {
+      sentence: 'Eu {blank} a verdade sobre o que aconteceu.',
+      verb: 'admitir',
+      tense: 'presente',
+      answers: ['admito'],
+    },
+    {
+      sentence: 'Ela {blank} que errou na tarefa.',
+      verb: 'admitir',
+      tense: 'presente',
+      answers: ['admite'],
+    },
+    {
+      sentence: 'Nós {blank} que precisamos de ajuda.',
+      verb: 'admitir',
+      tense: 'presente',
+      answers: ['admitimos'],
+    },
+    {
+      sentence: 'Você {blank} as falhas do projeto.',
+      verb: 'admitir',
+      tense: 'presente',
+      answers: ['admite'],
+    },
+    {
+      sentence: 'Eles {blank} que trabalharam duro para o sucesso.',
+      verb: 'admitir',
+      tense: 'presente',
+      answers: ['admitam'],
+    },
+    {
+      sentence: 'João {blank} a responsabilidade pelo erro.',
+      verb: 'admitir',
+      tense: 'presente',
+      answers: ['admita'],
+    },
+    {
+      sentence: 'Nós {blank} que o plano não está funcionando.',
+      verb: 'admitir',
+      tense: 'presente',
+      answers: ['admitimos'],
+    },
+    {
+      sentence: 'Você e eu {blank} que temos que melhorar.',
+      verb: 'admitir',
+      tense: 'presente',
+      answers: ['admitimos'],
+    },
+    {
+      sentence: 'Maria {blank} que ficou nervosa durante a apresentação.',
+      verb: 'admitir',
+      tense: 'presente',
+      answers: ['admite'],
+    },
+    {
+      sentence: 'Os alunos {blank} a importância da disciplina.',
+      verb: 'admitir',
+      tense: 'presente',
+      answers: ['admitam'],
+    },
+  ],
+};

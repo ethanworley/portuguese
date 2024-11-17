@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const revisar: ProblemList = {
+  verb: 'revisar',
+  problems: [
+    {
+      sentence: 'Eu {blank} o relatório antes da reunião.',
+      verb: 'revisar',
+      tense: 'pretérito perfeito',
+      answers: ['revisei'],
+    },
+    {
+      sentence: 'Ela {blank} os textos para o trabalho escolar.',
+      verb: 'revisar',
+      tense: 'pretérito perfeito',
+      answers: ['revisou'],
+    },
+    {
+      sentence: 'Nós {blank} as anotações da aula anterior.',
+      verb: 'revisar',
+      tense: 'pretérito perfeito',
+      answers: ['revisamos'],
+    },
+    {
+      sentence: 'Você {blank} sua apresentação antes de apresentá-la.',
+      verb: 'revisar',
+      tense: 'pretérito perfeito',
+      answers: ['revisou'],
+    },
+    {
+      sentence: 'Eles {blank} o contrato com atenção.',
+      verb: 'revisar',
+      tense: 'pretérito perfeito',
+      answers: ['revisaram'],
+    },
+    {
+      sentence: 'Maria {blank} o material para a prova.',
+      verb: 'revisar',
+      tense: 'pretérito perfeito',
+      answers: ['revisou'],
+    },
+    {
+      sentence: 'João e eu {blank} os planos para o evento.',
+      verb: 'revisar',
+      tense: 'pretérito perfeito',
+      answers: ['revisamos'],
+    },
+    {
+      sentence: 'Vocês {blank} as regras do jogo corretamente.',
+      verb: 'revisar',
+      tense: 'pretérito perfeito',
+      answers: ['revisaram'],
+    },
+    {
+      sentence: 'A professora {blank} as redações dos alunos.',
+      verb: 'revisar',
+      tense: 'pretérito perfeito',
+      answers: ['revisou'],
+    },
+    {
+      sentence: 'Eles {blank} o projeto antes de entregá-lo.',
+      verb: 'revisar',
+      tense: 'pretérito perfeito',
+      answers: ['revisaram'],
+    },
+    {
+      sentence: 'Eu {blank} a apresentação antes da reunião.',
+      verb: 'revisar',
+      tense: 'futuro',
+      answers: ['revisarei', 'vou revisar'],
+    },
+    {
+      sentence: 'Você {blank} os relatórios na próxima semana.',
+      verb: 'revisar',
+      tense: 'futuro',
+      answers: ['revisará', 'vai revisar'],
+    },
+    {
+      sentence: 'Ela {blank} o trabalho que fez para a escola.',
+      verb: 'revisar',
+      tense: 'futuro',
+      answers: ['revisará', 'vai revisar'],
+    },
+    {
+      sentence: 'Nós {blank} as notas antes da prova.',
+      verb: 'revisar',
+      tense: 'futuro',
+      answers: ['revisaremos', 'vamos revisar'],
+    },
+    {
+      sentence: 'Você e eu {blank} os documentos juntos amanhã.',
+      verb: 'revisar',
+      tense: 'futuro',
+      answers: ['revisaremos', 'vamos revisar'],
+    },
+    {
+      sentence: 'Eles {blank} o projeto na próxima sexta-feira.',
+      verb: 'revisar',
+      tense: 'futuro',
+      answers: ['revisarão', 'vão revisar'],
+    },
+    {
+      sentence: 'A Maria {blank} o texto que escreveu para o concurso.',
+      verb: 'revisar',
+      tense: 'futuro',
+      answers: ['revisará', 'vai revisar'],
+    },
+    {
+      sentence: 'Vocês {blank} o plano antes de apresentar.',
+      verb: 'revisar',
+      tense: 'futuro',
+      answers: ['revisarão', 'vão revisar'],
+    },
+    {
+      sentence: 'O João {blank} as regras do jogo antes de jogar.',
+      verb: 'revisar',
+      tense: 'futuro',
+      answers: ['revisará', 'vai revisar'],
+    },
+    {
+      sentence:
+        'Eu e o Pedro {blank} as mudanças no documento na próxima versão.',
+      verb: 'revisar',
+      tense: 'futuro',
+      answers: ['revisaremos', 'vamos revisar'],
+    },
+    {
+      sentence: 'Eu {blank} os relatórios toda semana.',
+      verb: 'revisar',
+      tense: 'presente',
+      answers: ['reviso'],
+    },
+    {
+      sentence: 'Ela {blank} os artigos antes de enviar.',
+      verb: 'revisar',
+      tense: 'presente',
+      answers: ['revisa'],
+    },
+    {
+      sentence: 'Você {blank} os planos de marketing neste mês.',
+      verb: 'revisar',
+      tense: 'presente',
+      answers: ['revisa'],
+    },
+    {
+      sentence: 'Nós {blank} o projeto durante a reunião.',
+      verb: 'revisar',
+      tense: 'presente',
+      answers: ['revisamos'],
+    },
+    {
+      sentence: 'Eles {blank} o conteúdo do site frequentemente.',
+      verb: 'revisar',
+      tense: 'presente',
+      answers: ['revisam'],
+    },
+    {
+      sentence: 'Você e eu {blank} as propostas antes de decidir.',
+      verb: 'revisar',
+      tense: 'presente',
+      answers: ['revisamos'],
+    },
+    {
+      sentence: 'Maria {blank} os documentos antes da apresentação.',
+      verb: 'revisar',
+      tense: 'presente',
+      answers: ['revisa'],
+    },
+    {
+      sentence: 'João {blank} as instruções detalhadamente.',
+      verb: 'revisar',
+      tense: 'presente',
+      answers: ['revisa'],
+    },
+    {
+      sentence: 'Os professores {blank} as avaliações regularmente.',
+      verb: 'revisar',
+      tense: 'presente',
+      answers: ['revisam'],
+    },
+    {
+      sentence: 'Vocês {blank} o material para a aula de amanhã.',
+      verb: 'revisar',
+      tense: 'presente',
+      answers: ['revisam'],
+    },
+  ],
+};

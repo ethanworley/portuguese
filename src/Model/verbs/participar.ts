@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const participar: ProblemList = {
+  verb: 'participar',
+  problems: [
+    {
+      sentence: 'Eu {blank} da reunião todos os dias.',
+      verb: 'participar',
+      tense: 'presente',
+      answers: ['participo'],
+    },
+    {
+      sentence: 'Você {blank} do projeto em equipe neste semestre.',
+      verb: 'participar',
+      tense: 'presente',
+      answers: ['participa'],
+    },
+    {
+      sentence: 'Ela {blank} de várias competições de dança.',
+      verb: 'participar',
+      tense: 'presente',
+      answers: ['participa'],
+    },
+    {
+      sentence: 'Nós {blank} de festas todos os anos.',
+      verb: 'participar',
+      tense: 'presente',
+      answers: ['participamos'],
+    },
+    {
+      sentence: 'Eles {blank} do programa de intercâmbio.',
+      verb: 'participar',
+      tense: 'presente',
+      answers: ['participam'],
+    },
+    {
+      sentence: 'João {blank} da reunião online semanalmente.',
+      verb: 'participar',
+      tense: 'presente',
+      answers: ['participa'],
+    },
+    {
+      sentence: 'Ana e eu {blank} do projeto de voluntariado.',
+      verb: 'participar',
+      tense: 'presente',
+      answers: ['participamos'],
+    },
+    {
+      sentence: 'Vocês {blank} do torneio de xadrez no próximo mês.',
+      verb: 'participar',
+      tense: 'presente',
+      answers: ['participam'],
+    },
+    {
+      sentence: 'Meu irmão {blank} do campeonato de futebol.',
+      verb: 'participar',
+      tense: 'presente',
+      answers: ['participa'],
+    },
+    {
+      sentence: 'Eu e você {blank} da conferência sobre tecnologia.',
+      verb: 'participar',
+      tense: 'presente',
+      answers: ['participamos'],
+    },
+    {
+      sentence: 'Eu {blank} da reunião ontem à tarde.',
+      verb: 'participar',
+      tense: 'pretérito perfeito',
+      answers: ['participei'],
+    },
+    {
+      sentence: 'Ela {blank} do evento especial na escola.',
+      verb: 'participar',
+      tense: 'pretérito perfeito',
+      answers: ['participou'],
+    },
+    {
+      sentence: 'Nós {blank} da festa de aniversário do Lucas.',
+      verb: 'participar',
+      tense: 'pretérito perfeito',
+      answers: ['participamos'],
+    },
+    {
+      sentence: 'Vocês {blank} do campeonato na semana passada.',
+      verb: 'participar',
+      tense: 'pretérito perfeito',
+      answers: ['participaram'],
+    },
+    {
+      sentence: 'Ele {blank} da corrida no sábado.',
+      verb: 'participar',
+      tense: 'pretérito perfeito',
+      answers: ['participou'],
+    },
+    {
+      sentence: 'Você {blank} da conferência online organizada pela faculdade.',
+      verb: 'participar',
+      tense: 'pretérito perfeito',
+      answers: ['participou'],
+    },
+    {
+      sentence: 'Maria e eu {blank} do projeto de grupo.',
+      verb: 'participar',
+      tense: 'pretérito perfeito',
+      answers: ['participamos'],
+    },
+    {
+      sentence: 'Os alunos {blank} do passeio escolar na última semana.',
+      verb: 'participar',
+      tense: 'pretérito perfeito',
+      answers: ['participaram'],
+    },
+    {
+      sentence: 'João {blank} da reunião com os pais.',
+      verb: 'participar',
+      tense: 'pretérito perfeito',
+      answers: ['participou'],
+    },
+    {
+      sentence: 'Eu e você {blank} deste importante debate.',
+      verb: 'participar',
+      tense: 'pretérito perfeito',
+      answers: ['participamos'],
+    },
+    {
+      sentence: 'Eu {blank} da reunião amanhã.',
+      verb: 'participar',
+      tense: 'futuro',
+      answers: ['participarei', 'vou participar'],
+    },
+    {
+      sentence: 'Você {blank} do projeto com a equipe na próxima semana.',
+      verb: 'participar',
+      tense: 'futuro',
+      answers: ['participará', 'vai participar'],
+    },
+    {
+      sentence: 'Nós {blank} da conferência no mês que vem.',
+      verb: 'participar',
+      tense: 'futuro',
+      answers: ['participaremos', 'vamos participar'],
+    },
+    {
+      sentence: 'Ela {blank} da competição de dança na primavera.',
+      verb: 'participar',
+      tense: 'futuro',
+      answers: ['participará', 'vai participar'],
+    },
+    {
+      sentence: 'Eles {blank} da festa de aniversário do Pedro na sexta.',
+      verb: 'participar',
+      tense: 'futuro',
+      answers: ['participarão', 'vão participar'],
+    },
+    {
+      sentence: 'Tu {blank} da seletiva de futebol na próxima terça.',
+      verb: 'participar',
+      tense: 'futuro',
+      answers: ['participarás', 'vais participar'],
+    },
+    {
+      sentence: 'Eu e você {blank} da reunião de pais na [quinta-feira].',
+      verb: 'participar',
+      tense: 'futuro',
+      answers: ['participaremos', 'vamos participar'],
+    },
+    {
+      sentence: 'Os alunos {blank} da feira de ciências este ano.',
+      verb: 'participar',
+      tense: 'futuro',
+      answers: ['participarão', 'vão participar'],
+    },
+    {
+      sentence: 'Ela e eu {blank} do workshop sobre tecnologia amanhã.',
+      verb: 'participar',
+      tense: 'futuro',
+      answers: ['participaremos', 'vamos participar'],
+    },
+    {
+      sentence:
+        'Eles {blank} da discussão sobre mudanças climáticas na próxima reunião.',
+      verb: 'participar',
+      tense: 'futuro',
+      answers: ['participarão', 'vão participar'],
+    },
+  ],
+};

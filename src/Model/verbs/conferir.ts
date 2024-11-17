@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const conferir: ProblemList = {
+  verb: 'conferir',
+  problems: [
+    {
+      sentence: 'Eu {blank} o relatório antes da apresentação.',
+      verb: 'conferir',
+      tense: 'pretérito perfeito',
+      answers: ['confirmei'],
+    },
+    {
+      sentence: 'Ela {blank} todas as contas do mês passado.',
+      verb: 'conferir',
+      tense: 'pretérito perfeito',
+      answers: ['conferiu'],
+    },
+    {
+      sentence: 'Nós {blank} os detalhes do projeto juntos.',
+      verb: 'conferir',
+      tense: 'pretérito perfeito',
+      answers: ['conferimos'],
+    },
+    {
+      sentence: 'Você {blank} o seu [e-mail] antes de enviar.',
+      verb: 'conferir',
+      tense: 'pretérito perfeito',
+      answers: ['conferiu'],
+    },
+    {
+      sentence: 'Os alunos {blank} as respostas antes da prova.',
+      verb: 'conferir',
+      tense: 'pretérito perfeito',
+      answers: ['conferiram'],
+    },
+    {
+      sentence: 'Eu {blank} as informações com os responsáveis.',
+      verb: 'conferir',
+      tense: 'pretérito perfeito',
+      answers: ['conferi'],
+    },
+    {
+      sentence: 'Ele {blank} o horário do voo antes de viajar.',
+      verb: 'conferir',
+      tense: 'pretérito perfeito',
+      answers: ['conferiu'],
+    },
+    {
+      sentence: 'Vocês {blank} os documentos no prazo estipulado.',
+      verb: 'conferir',
+      tense: 'pretérito perfeito',
+      answers: ['conferiram'],
+    },
+    {
+      sentence: 'Maria e eu {blank} a lista de convidados para o evento.',
+      verb: 'conferir',
+      tense: 'pretérito perfeito',
+      answers: ['conferimos'],
+    },
+    {
+      sentence: 'A equipe {blank} todos os requisitos do projeto.',
+      verb: 'conferir',
+      tense: 'pretérito perfeito',
+      answers: ['conferiu'],
+    },
+    {
+      sentence: 'Eu {blank} a apresentação na próxima reunião.',
+      verb: 'conferir',
+      tense: 'futuro',
+      answers: ['conferirei', 'vou conferir'],
+    },
+    {
+      sentence: 'Você {blank} os detalhes antes do evento.',
+      verb: 'conferir',
+      tense: 'futuro',
+      answers: ['conferirá', 'vai conferir'],
+    },
+    {
+      sentence: 'Ela {blank} todas as informações necessárias.',
+      verb: 'conferir',
+      tense: 'futuro',
+      answers: ['conferirá', 'vai conferir'],
+    },
+    {
+      sentence: 'Nós {blank} o relatório final antes da entrega.',
+      verb: 'conferir',
+      tense: 'futuro',
+      answers: ['conferiremos', 'vamos conferir'],
+    },
+    {
+      sentence: 'Vocês {blank} a lista de convidados amanhã.',
+      verb: 'conferir',
+      tense: 'futuro',
+      answers: ['conferirão', 'vão conferir'],
+    },
+    {
+      sentence: 'Eles {blank} as datas antes de fechar o contrato.',
+      verb: 'conferir',
+      tense: 'futuro',
+      answers: ['conferirão', 'vão conferir'],
+    },
+    {
+      sentence: 'João {blank} os resultados do exame [quinta-feira].',
+      verb: 'conferir',
+      tense: 'futuro',
+      answers: ['conferirá', 'vai conferir'],
+    },
+    {
+      sentence: 'Maria e Ana {blank} as grades das aulas no próximo mês.',
+      verb: 'conferir',
+      tense: 'futuro',
+      answers: ['conferirão', 'vão conferir'],
+    },
+    {
+      sentence: 'Pedrinho {blank} tudo que for importante na reunião.',
+      verb: 'conferir',
+      tense: 'futuro',
+      answers: ['conferirá', 'vai conferir'],
+    },
+    {
+      sentence: 'Você e eu {blank} os valores do orçamento amanhã.',
+      verb: 'conferir',
+      tense: 'futuro',
+      answers: ['conferiremos', 'vamos conferir'],
+    },
+    {
+      sentence: 'Eu {blank} sempre os meus [e-mails] antes de enviá-los.',
+      verb: 'conferir',
+      tense: 'presente',
+      answers: ['confiro'],
+    },
+    {
+      sentence: 'Você {blank} as informações importantes no relatório.',
+      verb: 'conferir',
+      tense: 'presente',
+      answers: ['confere'],
+    },
+    {
+      sentence: 'Ela {blank} os resultados do exame cuidadosamente.',
+      verb: 'conferir',
+      tense: 'presente',
+      answers: ['confere'],
+    },
+    {
+      sentence: 'Nós {blank} as contas uma vez por mês.',
+      verb: 'conferir',
+      tense: 'presente',
+      answers: ['conferimos'],
+    },
+    {
+      sentence: 'Eles {blank} a lista de convidados para a festa.',
+      verb: 'conferir',
+      tense: 'presente',
+      answers: ['conferem'],
+    },
+    {
+      sentence: 'Carlos {blank} a agenda dos compromissos diários.',
+      verb: 'conferir',
+      tense: 'presente',
+      answers: ['confere'],
+    },
+    {
+      sentence: 'Você e eu {blank} os horários do transporte público.',
+      verb: 'conferir',
+      tense: 'presente',
+      answers: ['conferimos'],
+    },
+    {
+      sentence:
+        'Ana {blank} os ingredientes da receita antes de começar a cozinhar.',
+      verb: 'conferir',
+      tense: 'presente',
+      answers: ['confere'],
+    },
+    {
+      sentence: 'Vocês {blank} o relatório antes da apresentação.',
+      verb: 'conferir',
+      tense: 'presente',
+      answers: ['conferem'],
+    },
+    {
+      sentence: 'Eles {blank} as provas de segurança constantemente.',
+      verb: 'conferir',
+      tense: 'presente',
+      answers: ['conferem'],
+    },
+  ],
+};

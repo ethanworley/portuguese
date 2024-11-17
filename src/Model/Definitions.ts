@@ -547,7 +547,7 @@ export const verbsDictionary: { [key: string]: Definition } = {
   },
 };
 
-export const keywords: { [key: string]: Definition } = {
+const definitions: { [key: string]: Definition } = {
   café: {
     description: 'Bebida feita a partir de grãos torrados de café.',
     en: {
@@ -1247,4 +1247,1140 @@ export const keywords: { [key: string]: Definition } = {
         'An electronic device used for voice communication over long distances.',
     },
   },
+  entregador: {
+    description: 'Pessoa que entrega encomendas ou mercadorias.',
+    en: {
+      translation: 'delivery person',
+      description: 'Person who delivers parcels or goods.',
+    },
+  },
+  janela: {
+    description:
+      'Abertura na parede ou teto de um edifício que permite a entrada de luz e ar.',
+    en: {
+      translation: 'window',
+      description:
+        'An opening in a wall or roof of a building that allows light and air to enter.',
+    },
+  },
+  livros: {
+    description:
+      'Conjunto de folhas escritas ou impressas reunidas em um volume.',
+    en: {
+      translation: 'books',
+      description:
+        'A set of written or printed pages bound together in a volume.',
+    },
+  },
+  negócio: {
+    description: 'Atividade comercial ou profissional visando lucro.',
+    en: {
+      translation: 'business',
+      description: 'Commercial or professional activity conducted for profit.',
+    },
+  },
+  caixa: {
+    description: 'Contêiner usado para armazenar ou transportar objetos.',
+    en: {
+      translation: 'box',
+      description: 'A container used to store or transport items.',
+    },
+  },
+  empresa: {
+    description: 'Organização dedicada a atividades comerciais ou industriais.',
+    en: {
+      translation: 'company',
+      description:
+        'An organization engaged in commercial or industrial activities.',
+    },
+  },
+  chegou: {
+    description:
+      'Passado do verbo "chegar", significa ter alcançado um destino ou ponto final.',
+    en: {
+      translation: 'arrived',
+      description:
+        'Past tense of "to arrive", meaning to have reached a destination or endpoint.',
+    },
+  },
+  envelope: {
+    description: 'Recipiente de papel usado para guardar cartas ou documentos.',
+    en: {
+      translation: 'envelope',
+      description: 'A paper container used to hold letters or documents.',
+    },
+  },
+  inscrições: {
+    description:
+      'Ato ou efeito de inscrever-se em algo, como um curso ou evento.',
+    en: {
+      translation: 'registrations',
+      description:
+        'The act of enrolling in something, such as a course or event.',
+    },
+  },
+  presentes: {
+    description:
+      'Objetos dados a alguém em ocasiões especiais como demonstração de afeto.',
+    en: {
+      translation: 'gifts',
+      description:
+        'Items given to someone on special occasions as a sign of affection.',
+    },
+  },
+  banco: {
+    description:
+      'Instituição financeira que oferece serviços como depósitos e empréstimos.',
+    en: {
+      translation: 'bank',
+      description:
+        'A financial institution that provides services like deposits and loans.',
+    },
+  },
+  mente: {
+    description:
+      'Faculdade intelectual do ser humano responsável pelo pensamento e raciocínio.',
+    en: {
+      translation: 'mind',
+      description:
+        'The intellectual faculty of humans responsible for thought and reasoning.',
+    },
+  },
+  shopping: {
+    description:
+      'Centro comercial com várias lojas, restaurantes e entretenimento.',
+    en: {
+      translation: 'shopping mall',
+      description:
+        'A commercial center with various stores, restaurants, and entertainment options.',
+    },
+  },
+  feriado: {
+    description:
+      'Dia de celebração ou descanso oficial, em que não há trabalho ou aulas.',
+    en: {
+      translation: 'holiday',
+      description:
+        'A day of official celebration or rest when work and school are typically suspended.',
+    },
+  },
+  'hoje à noite': {
+    description: 'Período do dia correspondente à noite de hoje.',
+    en: {
+      translation: 'tonight',
+      description:
+        'The period of the current day corresponding to the evening or night.',
+    },
+  },
+  show: {
+    description:
+      'Espetáculo ou apresentação artística realizada para um público.',
+    en: {
+      translation: 'show',
+      description:
+        'A performance or artistic presentation conducted for an audience.',
+    },
+  },
+  sino: {
+    description:
+      'Instrumento que produz som ao ser tocado, geralmente usado para sinalizar eventos.',
+    en: {
+      translation: 'bell',
+      description:
+        'An instrument that produces sound when struck, commonly used to signal events.',
+    },
+  },
+  trem: {
+    description:
+      'Veículo composto por vagões que se movem sobre trilhos para transporte de pessoas ou cargas.',
+    en: {
+      translation: 'train',
+      description:
+        'A vehicle consisting of cars that move on rails for transporting people or goods.',
+    },
+  },
+  mudança: {
+    description:
+      'Ato ou efeito de mudar; alteração de lugar, situação ou estado.',
+    en: {
+      translation: 'move',
+      description:
+        'The act or effect of changing; alteration of place, situation, or state.',
+    },
+  },
+  avós: {
+    description:
+      'Pais dos pais de uma pessoa; os progenitores dos progenitores.',
+    en: {
+      translation: 'grandparents',
+      description: "The parents of a person's parents; one's grandparents.",
+    },
+  },
+  rápido: {
+    description: 'Que se move com velocidade; veloz, ágil.',
+    en: {
+      translation: 'fast',
+      description: 'Moving with speed; quick, agile.',
+    },
+  },
+  evento: {
+    description: 'Acontecimento importante ou programado; ocorrência.',
+    en: {
+      translation: 'event',
+      description: 'An important or scheduled happening; occurrence.',
+    },
+  },
+  especial: {
+    description: 'Que se distingue dos demais; singular, particular.',
+    en: {
+      translation: 'special',
+      description:
+        'That which distinguishes itself from others; singular, particular.',
+    },
+  },
+  casamento: {
+    description:
+      'Cerimônia ou contrato que formaliza a união entre duas pessoas.',
+    en: {
+      translation: 'wedding',
+      description:
+        'Ceremony or contract that formalizes the union between two people.',
+    },
+  },
+  amigo: {
+    description:
+      'Pessoa com quem se tem uma relação de amizade; companheiro, camarada.',
+    en: {
+      translation: 'friend',
+      description:
+        'A person with whom one has a bond of mutual affection; companion, comrade.',
+    },
+  },
+  amanhã: {
+    description: 'O dia que se segue ao dia presente; o dia depois de hoje.',
+    en: {
+      translation: 'tomorrow',
+      description: 'The day following the present day; the day after today.',
+    },
+  },
+  museu: {
+    description:
+      'Instituição que conserva, estuda e expõe coleções de arte, ciência ou outros objetos de valor.',
+    en: {
+      translation: 'museum',
+      description:
+        'An institution that conserves, studies, and displays collections of art, science, or other valuable objects.',
+    },
+  },
+  cidades: {
+    description:
+      'Grandes aglomerações urbanas com alta densidade populacional e importância administrativa ou econômica.',
+    en: {
+      translation: 'cities',
+      description:
+        'Large urban settlements with high population density and administrative or economic importance.',
+    },
+  },
+  'arte moderna': {
+    description:
+      'Movimento artístico que engloba diversas expressões do século XX, caracterizado por inovação e quebra de tradições.',
+    en: {
+      translation: 'modern art',
+      description:
+        'An artistic movement encompassing various expressions from the 20th century, characterized by innovation and breaking of traditions.',
+    },
+  },
+  exposição: {
+    description:
+      'Evento ou mostra onde são apresentados ao público objetos ou obras de arte.',
+    en: {
+      translation: 'exhibition',
+      description:
+        'An event or display where objects or works of art are presented to the public.',
+    },
+  },
+  parentes: {
+    description: 'Pessoas que pertencem à mesma família; familiares.',
+    en: {
+      translation: 'relatives',
+      description: 'People who belong to the same family; family members.',
+    },
+  },
+  ontem: {
+    description: 'O dia imediatamente anterior ao dia de hoje.',
+    en: {
+      translation: 'yesterday',
+      description: 'The day immediately before today.',
+    },
+  },
+  campanha: {
+    description:
+      'Conjunto de ações organizadas com um objetivo específico, geralmente em determinado período.',
+    en: {
+      translation: 'campaign',
+      description:
+        'A set of organized actions with a specific goal, usually over a certain period.',
+    },
+  },
+  sangue: {
+    description:
+      'Líquido vital que circula nas veias e artérias dos seres vivos, responsável pelo transporte de nutrientes e oxigênio.',
+    en: {
+      translation: 'blood',
+      description:
+        'The vital liquid circulating in the veins and arteries of living beings, responsible for transporting nutrients and oxygen.',
+    },
+  },
+  praia: {
+    description:
+      'Faixa de terra à beira do mar, de um rio ou lago, geralmente coberta de areia ou pedras.',
+    en: {
+      translation: 'beach',
+      description:
+        'A strip of land by the sea, river, or lake, usually covered with sand or stones.',
+    },
+  },
+  abrigo: {
+    description: 'Local que oferece proteção ou refúgio; lugar seguro.',
+    en: {
+      translation: 'shelter',
+      description: 'A place that offers protection or refuge; a safe place.',
+    },
+  },
+  alimento: {
+    description: 'Substância que serve de nutriente aos seres vivos; comida.',
+    en: {
+      translation: 'food',
+      description:
+        'Substance that serves as a nutrient for living beings; food.',
+    },
+  },
+  brasil: {
+    description:
+      'País localizado na América do Sul, conhecido por sua diversidade cultural e natural.',
+    en: {
+      translation: 'Brazil',
+      description:
+        'Country located in South America, known for its cultural and natural diversity.',
+    },
+  },
+  hotel: {
+    description:
+      'Estabelecimento que oferece hospedagem temporária a viajantes mediante pagamento.',
+    en: {
+      translation: 'hotel',
+      description:
+        'Establishment that provides temporary lodging to travelers for payment.',
+    },
+  },
+  noite: {
+    description:
+      'Período do dia compreendido entre o pôr do sol e o nascer do sol; oposto de dia.',
+    en: {
+      translation: 'night',
+      description:
+        'The period of the day between sunset and sunrise; opposite of day.',
+    },
+  },
+  passeio: {
+    description:
+      'Atividade de lazer que envolve caminhar ou viajar por prazer; excursão.',
+    en: {
+      translation: 'outing',
+      description:
+        'Leisure activity involving walking or traveling for pleasure; excursion.',
+    },
+  },
+  arrecadação: {
+    description: 'Ato ou efeito de arrecadar; coleta de recursos ou donativos.',
+    en: {
+      translation: 'collection',
+      description:
+        'The act or effect of collecting; gathering of resources or donations.',
+    },
+  },
+  hospital: {
+    description:
+      'Instituição destinada ao tratamento médico e cuidados de saúde de doentes e feridos.',
+    en: {
+      translation: 'hospital',
+      description:
+        'Institution dedicated to medical treatment and healthcare of the sick and injured.',
+    },
+  },
+  infantil: {
+    description: 'Relativo a crianças ou à infância; próprio de criança.',
+    en: {
+      translation: 'childish',
+      description:
+        'Related to children or childhood; characteristic of a child.',
+    },
+  },
+  mês: {
+    description:
+      'Período aproximado de trinta dias, totalizando doze em um ano.',
+    en: {
+      translation: 'month',
+      description:
+        'A period of approximately thirty days, totaling twelve in a year.',
+    },
+  },
+  dever: {
+    description: 'Tarefa ou obrigação que deve ser cumprida; responsabilidade.',
+    en: {
+      translation: 'duty',
+      description:
+        'A task or obligation that must be fulfilled; responsibility.',
+    },
+  },
+  país: {
+    description:
+      'Nação com seu próprio governo, ocupando um território específico.',
+    en: {
+      translation: 'country',
+      description:
+        'A nation with its own government, occupying a particular territory.',
+    },
+  },
+  mundo: {
+    description:
+      'O planeta Terra; a totalidade dos seres humanos, suas sociedades e culturas.',
+    en: {
+      translation: 'world',
+      description:
+        'The planet Earth; the totality of human beings, their societies, and cultures.',
+    },
+  },
+  europa: {
+    description:
+      'Continente localizado no hemisfério norte, composto por diversos países com rica história e cultura.',
+    en: {
+      translation: 'Europe',
+      description:
+        'A continent located in the Northern Hemisphere, composed of various countries with rich history and culture.',
+    },
+  },
+  ano: {
+    description:
+      'Período de doze meses usado para medir o tempo; corresponde ao tempo que a Terra leva para orbitar o Sol.',
+    en: {
+      translation: 'year',
+      description:
+        'A period of twelve months used to measure time; corresponds to the time it takes Earth to orbit the Sun.',
+    },
+  },
+  informação: {
+    description: 'Conjunto de dados ou conhecimentos sobre algo ou alguém.',
+    en: {
+      translation: 'information',
+      description:
+        'A collection of data or knowledge about something or someone.',
+    },
+  },
+  criança: {
+    description:
+      'Indivíduo em fase inicial de desenvolvimento; menino ou menina.',
+    en: {
+      translation: 'child',
+      description:
+        'An individual in the early stages of development; boy or girl.',
+    },
+  },
+  frequentemente: {
+    description: 'De modo frequente; com regularidade; muitas vezes.',
+    en: {
+      translation: 'frequently',
+      description: 'In a frequent manner; regularly; often.',
+    },
+  },
+  diferente: {
+    description: 'Que não é igual; que possui distinções em relação a outro.',
+    en: {
+      translation: 'different',
+      description: 'That is not the same; having distinctions from another.',
+    },
+  },
+  conta: {
+    description:
+      'Registro de débitos e créditos; fatura ou cobrança a ser paga.',
+    en: {
+      translation: 'bill',
+      description:
+        'A record of debits and credits; an invoice or charge to be paid.',
+    },
+  },
+  dado: {
+    description:
+      'Informação ou elemento utilizado como base para cálculo, análise ou tomada de decisão.',
+    en: {
+      translation: 'data',
+      description:
+        'Information or elements used as a basis for calculation, analysis, or decision-making.',
+    },
+  },
+  churrasco: {
+    description:
+      'Refeição ou evento social em que se assam carnes na grelha ou churrasqueira.',
+    en: {
+      translation: 'barbecue',
+      description:
+        'A meal or social event where meats are grilled over a grill or barbecue pit.',
+    },
+  },
+  tecnologia: {
+    description:
+      'Conjunto de conhecimentos e técnicas aplicados para criar ferramentas, equipamentos e processos que facilitam atividades humanas.',
+    en: {
+      translation: 'technology',
+      description:
+        'A set of knowledge and techniques applied to create tools, equipment, and processes that facilitate human activities.',
+    },
+  },
+  dedicação: {
+    description:
+      'Ato de se empenhar com zelo e esforço em uma atividade ou causa.',
+    en: {
+      translation: 'dedication',
+      description:
+        'The act of committing oneself with zeal and effort to an activity or cause.',
+    },
+  },
+  objetivo: {
+    description: 'Meta ou finalidade que se deseja alcançar.',
+    en: {
+      translation: 'goal',
+      description: 'A target or purpose one aims to achieve.',
+    },
+  },
+  fábrica: {
+    description:
+      'Estabelecimento industrial onde produtos são fabricados em grande escala.',
+    en: {
+      translation: 'factory',
+      description:
+        'An industrial establishment where products are manufactured on a large scale.',
+    },
+  },
+  cliente: {
+    description: 'Pessoa que adquire produtos ou serviços; comprador.',
+    en: {
+      translation: 'client',
+      description: 'A person who purchases products or services; customer.',
+    },
+  },
+  aluno: {
+    description:
+      'Pessoa que recebe instrução em uma instituição de ensino; estudante.',
+    en: {
+      translation: 'student',
+      description:
+        'A person who receives instruction at an educational institution; student.',
+    },
+  },
+  time: {
+    description:
+      'Grupo de pessoas que trabalham juntas para alcançar um objetivo comum; equipe.',
+    en: {
+      translation: 'team',
+      description:
+        'A group of people who work together to achieve a common goal; team.',
+    },
+  },
+  semestre: {
+    description:
+      'Período de seis meses; metade de um ano letivo ou calendário.',
+    en: {
+      translation: 'semester',
+      description: 'A six-month period; half of an academic or calendar year.',
+    },
+  },
+  'quinta-feira': {
+    description:
+      'Quinto dia da semana, após a quarta-feira e antes da sexta-feira.',
+    en: {
+      translation: 'Thursday',
+      description:
+        'The fifth day of the week, following Wednesday and preceding Friday.',
+    },
+  },
+  sábado: {
+    description:
+      'Sexto dia da semana, entre a sexta-feira e o domingo, geralmente associado ao descanso e lazer.',
+    en: {
+      translation: 'Saturday',
+      description:
+        'The sixth day of the week, between Friday and Sunday, usually associated with rest and leisure.',
+    },
+  },
+  família: {
+    description:
+      'Grupo de pessoas unidas por laços de parentesco, especialmente pais e filhos.',
+    en: {
+      translation: 'family',
+      description:
+        'A group of people related by blood or marriage, especially parents and their children.',
+    },
+  },
+  treino: {
+    description:
+      'Atividade ou exercício realizado para melhorar habilidades ou preparar-se para algo.',
+    en: {
+      translation: 'training',
+      description:
+        'An activity or exercise undertaken to improve skills or prepare for something.',
+    },
+  },
+  aquilo: {
+    description:
+      'Pronome demonstrativo usado para referir-se a algo distante no tempo ou no espaço.',
+    en: {
+      translation: 'that',
+      description:
+        'Demonstrative pronoun used to refer to something distant in time or space.',
+    },
+  },
+  dia: {
+    description:
+      'Período de 24 horas; tempo que a Terra leva para dar uma volta completa em torno de seu eixo.',
+    en: {
+      translation: 'day',
+      description:
+        'A period of 24 hours; the time it takes the Earth to complete one full rotation on its axis.',
+    },
+  },
+  exame: {
+    description:
+      'Avaliação ou prova para testar conhecimentos, habilidades ou condições físicas.',
+    en: {
+      translation: 'exam',
+      description:
+        'An assessment or test to evaluate knowledge, skills, or physical condition.',
+    },
+  },
+  exercício: {
+    description:
+      'Atividade física ou mental realizada para manter ou melhorar a saúde ou habilidade.',
+    en: {
+      translation: 'exercise',
+      description:
+        'Physical or mental activity undertaken to maintain or improve health or skill.',
+    },
+  },
+  avaliação: {
+    description:
+      'Ato de avaliar; estimativa ou julgamento sobre o valor, qualidade ou importância de algo.',
+    en: {
+      translation: 'assessment',
+      description:
+        'The act of evaluating; estimation or judgment about the value, quality, or importance of something.',
+    },
+  },
+  opção: {
+    description: 'Alternativa ou escolha entre duas ou mais possibilidades.',
+    en: {
+      translation: 'option',
+      description: 'An alternative or choice among two or more possibilities.',
+    },
+  },
+  biblioteca: {
+    description:
+      'Local onde se colecionam e guardam livros e outros materiais para leitura ou consulta.',
+    en: {
+      translation: 'library',
+      description:
+        'A place where books and other reading or reference materials are collected and stored for use.',
+    },
+  },
+  estudar: {
+    description:
+      'Dedicar-se ao aprendizado ou aquisição de conhecimento sobre um assunto.',
+    en: {
+      translation: 'to study',
+      description:
+        'To dedicate oneself to learning or acquiring knowledge about a subject.',
+    },
+  },
+  futebol: {
+    description:
+      'Esporte jogado entre duas equipes de onze jogadores com uma bola esférica, onde o objetivo é marcar gols.',
+    en: {
+      translation: 'football (soccer)',
+      description:
+        'A sport played between two teams of eleven players with a spherical ball, where the objective is to score goals.',
+    },
+  },
+  chuva: {
+    description:
+      'Precipitação de gotas de água líquida provenientes da condensação do vapor de água atmosférico.',
+    en: {
+      translation: 'rain',
+      description:
+        'Precipitation of liquid water droplets from atmospheric water vapor condensation.',
+    },
+  },
+  amanhecer: {
+    description: 'Período do dia em que começa a surgir a luz do sol; aurora.',
+    en: {
+      translation: 'dawn',
+      description:
+        'The time of day when the first light of the sun appears; sunrise.',
+    },
+  },
+  crítica: {
+    description:
+      'Expressão de julgamento ou análise sobre algo ou alguém, apontando aspectos positivos e negativos.',
+    en: {
+      translation: 'criticism',
+      description:
+        'Expression of judgment or analysis about something or someone, pointing out positive and negative aspects.',
+    },
+  },
+  proposta: {
+    description:
+      'Oferta ou sugestão apresentada para consideração ou aceitação.',
+    en: {
+      translation: 'proposal',
+      description:
+        'An offer or suggestion put forward for consideration or acceptance.',
+    },
+  },
+  pergunta: {
+    description:
+      'Interrogação feita para obter informação ou esclarecer dúvida.',
+    en: {
+      translation: 'question',
+      description:
+        'An interrogation made to obtain information or clarify a doubt.',
+    },
+  },
+  convite: {
+    description:
+      'Pedido ou solicitação para que alguém participe de um evento ou atividade.',
+    en: {
+      translation: 'invitation',
+      description:
+        'A request or solicitation for someone to participate in an event or activity.',
+    },
+  },
+  concurso: {
+    description:
+      'Competição ou seleção entre candidatos para um prêmio, cargo ou reconhecimento.',
+    en: {
+      translation: 'contest',
+      description:
+        'A competition or selection among candidates for a prize, position, or recognition.',
+    },
+  },
+  instrução: {
+    description:
+      'Orientação ou conjunto de diretrizes que indicam como proceder em determinada situação.',
+    en: {
+      translation: 'instruction',
+      description:
+        'Guidance or a set of directions indicating how to proceed in a particular situation.',
+    },
+  },
+  'e-mail': {
+    description: 'Mensagem eletrônica enviada ou recebida através da internet.',
+    en: {
+      translation: 'email',
+      description: 'An electronic message sent or received over the internet.',
+    },
+  },
+  desafio: {
+    description:
+      'Tarefa ou situação que exige esforço ou habilidade especial para ser realizada; algo que representa uma dificuldade a ser superada.',
+    en: {
+      translation: 'challenge',
+      description:
+        'A task or situation that requires special effort or skill to accomplish; something that represents a difficulty to be overcome.',
+    },
+  },
+  pendência: {
+    description:
+      'Questão ou assunto que ainda não foi resolvido; algo que está pendente ou em espera.',
+    en: {
+      translation: 'pending matter',
+      description:
+        'An issue or matter that has not yet been resolved; something that is pending or awaiting action.',
+    },
+  },
+  problema: {
+    description:
+      'Questão ou situação difícil que requer solução; algo que causa dificuldade ou preocupação.',
+    en: {
+      translation: 'problem',
+      description:
+        'A difficult question or situation that requires a solution; something that causes difficulty or concern.',
+    },
+  },
+  conflito: {
+    description:
+      'Desentendimento ou oposição entre pessoas, ideias ou interesses; disputa, contenda.',
+    en: {
+      translation: 'conflict',
+      description:
+        'A disagreement or opposition between people, ideas, or interests; dispute, contention.',
+    },
+  },
+  engenharia: {
+    description:
+      'Aplicação de conhecimentos científicos e técnicos para o desenvolvimento de soluções em projetos e construções.',
+    en: {
+      translation: 'engineering',
+      description:
+        'The application of scientific and technical knowledge for the development of solutions in projects and constructions.',
+    },
+  },
+  erva: {
+    description:
+      'Planta geralmente aromática usada para fins medicinais, culinários ou como condimento.',
+    en: {
+      translation: 'herb',
+      description:
+        'A usually aromatic plant used for medicinal purposes, in cooking, or as a seasoning.',
+    },
+  },
+  bonsai: {
+    description:
+      'Árvore ou arbusto miniaturizado cultivado em vaso, seguindo técnicas especiais de poda e modelagem.',
+    en: {
+      translation: 'bonsai',
+      description:
+        'A miniaturized tree or shrub grown in a pot, following special pruning and shaping techniques.',
+    },
+  },
+  compromisso: {
+    description:
+      'Acordo ou obrigação assumida; encontro marcado ou responsabilidade a cumprir.',
+    en: {
+      translation: 'commitment',
+      description:
+        'An agreement or obligation undertaken; scheduled appointment or responsibility to fulfill.',
+    },
+  },
+  conferência: {
+    description:
+      'Reunião formal para discussão ou apresentação sobre um tema específico; congresso.',
+    en: {
+      translation: 'conference',
+      description:
+        'A formal meeting for discussion or presentation on a specific topic; congress.',
+    },
+  },
+  consulta: {
+    description:
+      'Atendimento profissional para obter orientação ou diagnóstico, especialmente na área médica.',
+    en: {
+      translation: 'consultation',
+      description:
+        'A professional appointment to obtain guidance or diagnosis, especially in the medical field.',
+    },
+  },
+  dentista: {
+    description:
+      'Profissional de saúde especializado no tratamento dos dentes e da boca.',
+    en: {
+      translation: 'dentist',
+      description:
+        'A healthcare professional specialized in treating teeth and the mouth.',
+    },
+  },
+  impasse: {
+    description:
+      'Situação em que não há progresso possível; bloqueio ou estagnação em uma negociação ou processo.',
+    en: {
+      translation: 'impasse',
+      description:
+        'A situation where no progress is possible; a deadlock or stalemate in a negotiation or process.',
+    },
+  },
+  negociação: {
+    description:
+      'Processo de diálogo entre partes para chegar a um acordo ou resolver um conflito.',
+    en: {
+      translation: 'negotiation',
+      description:
+        'The process of dialogue between parties to reach an agreement or resolve a conflict.',
+    },
+  },
+  sapato: {
+    description:
+      'Calçado que cobre o pé, geralmente feito de couro, tecido ou material sintético, usado para proteção e conforto ao caminhar.',
+    en: {
+      translation: 'shoe',
+      description:
+        'Footwear that covers the foot, usually made of leather, fabric, or synthetic material, used for protection and comfort while walking.',
+    },
+  },
+  sabedoria: {
+    description:
+      'Qualidade de quem possui conhecimento profundo, discernimento e bom senso; sapiência.',
+    en: {
+      translation: 'wisdom',
+      description:
+        'The quality of having deep knowledge, discernment, and good judgment; sagacity.',
+    },
+  },
+  apoio: {
+    description:
+      'Ato ou efeito de apoiar; assistência, ajuda ou suporte oferecido a alguém.',
+    en: {
+      translation: 'support',
+      description:
+        'The act or effect of supporting; assistance, help, or backing offered to someone.',
+    },
+  },
+  processo: {
+    description:
+      'Sequência de ações ou etapas necessárias para alcançar um resultado; procedimento.',
+    en: {
+      translation: 'process',
+      description:
+        'A sequence of actions or steps required to achieve a result; procedure.',
+    },
+  },
+  discurso: {
+    description:
+      'Exposição oral ou escrita sobre determinado assunto; fala pública.',
+    en: {
+      translation: 'speech',
+      description:
+        'An oral or written presentation on a specific subject; public talk.',
+    },
+  },
+  cerimônia: {
+    description:
+      'Evento formal ou ritualístico, geralmente para celebrar ou marcar uma ocasião especial.',
+    en: {
+      translation: 'ceremony',
+      description:
+        'A formal or ritualistic event, usually to celebrate or mark a special occasion.',
+    },
+  },
+  equipe: {
+    description:
+      'Grupo de pessoas que trabalham juntas com um objetivo comum; time.',
+    en: {
+      translation: 'team',
+      description:
+        'A group of people who work together towards a common goal; team.',
+    },
+  },
+  torneio: {
+    description:
+      'Competição esportiva ou intelectual entre vários participantes ou equipes; campeonato.',
+    en: {
+      translation: 'tournament',
+      description:
+        'A sports or intellectual competition among various participants or teams; championship.',
+    },
+  },
+  grama: {
+    description:
+      'Planta de pequeno porte que cobre o solo, comumente encontrada em jardins e campos; relva.',
+    en: {
+      translation: 'grass',
+      description:
+        'A low-growing plant that covers the ground, commonly found in lawns and fields; turf.',
+    },
+  },
+  quintal: {
+    description:
+      'Espaço aberto localizado na parte de trás ou ao redor de uma casa; pátio externo.',
+    en: {
+      translation: 'yard',
+      description:
+        'An open space located at the back or around a house; backyard.',
+    },
+  },
+  zelo: {
+    description:
+      'Cuidado ou dedicação extrema ao realizar uma tarefa; diligência.',
+    en: {
+      translation: 'zeal',
+      description:
+        'Great care or extreme dedication when performing a task; diligence.',
+    },
+  },
+  jardim: {
+    description:
+      'Área de terra cultivada com plantas ornamentais ou flores; espaço para cultivo e lazer.',
+    en: {
+      translation: 'garden',
+      description:
+        'An area of land cultivated with ornamental plants or flowers; space for cultivation and leisure.',
+    },
+  },
+  quarta: {
+    description: 'Quarto dia da semana, entre terça-feira e quinta-feira.',
+    en: {
+      translation: 'Wednesday',
+      description: 'The fourth day of the week, between Tuesday and Thursday.',
+    },
+  },
+  plantação: {
+    description: 'Área cultivada com plantas agrícolas; campo agrícola.',
+    en: {
+      translation: 'plantation',
+      description:
+        'An area cultivated with agricultural plants; agricultural field.',
+    },
+  },
+  colheita: {
+    description:
+      'Ato ou período de recolher produtos agrícolas maduros das plantações; safra.',
+    en: {
+      translation: 'harvest',
+      description:
+        'The act or period of gathering mature agricultural products from plantations; crop.',
+    },
+  },
+  carinho: {
+    description:
+      'Sentimento de afeto ou ternura demonstrado através de ações ou palavras gentis.',
+    en: {
+      translation: 'affection',
+      description:
+        'A feeling of fondness or tenderness demonstrated through kind actions or words.',
+    },
+  },
+  ajudar: {
+    description:
+      'Prestar auxílio ou assistência a alguém; contribuir para que algo aconteça.',
+    en: {
+      translation: 'to help',
+      description:
+        'To provide aid or assistance to someone; to contribute to making something happen.',
+    },
+  },
+  prazo: {
+    description:
+      'Período de tempo estabelecido para a realização de uma tarefa ou cumprimento de uma obrigação.',
+    en: {
+      translation: 'deadline',
+      description:
+        'A set period of time for completing a task or fulfilling an obligation.',
+    },
+  },
+  oportunidade: {
+    description:
+      'Circunstância favorável ou momento apropriado para realizar algo; chance.',
+    en: {
+      translation: 'opportunity',
+      description:
+        'A favorable circumstance or appropriate moment to do something; chance.',
+    },
+  },
+  endereço: {
+    description:
+      'Indicação do local onde alguém reside ou onde uma entidade está situada; localização postal.',
+    en: {
+      translation: 'address',
+      description:
+        'An indication of where someone lives or where an entity is located; postal location.',
+    },
+  },
+  chance: {
+    description:
+      'Possibilidade ou probabilidade de algo acontecer; oportunidade de sucesso.',
+    en: {
+      translation: 'chance',
+      description:
+        'Possibility or probability of something happening; opportunity for success.',
+    },
+  },
+  ônibus: {
+    description:
+      'Veículo de transporte coletivo que segue rotas e horários específicos, usado para deslocamento de passageiros.',
+    en: {
+      translation: 'bus',
+      description:
+        'A collective transport vehicle that follows specific routes and schedules, used for passenger transportation.',
+    },
+  },
+  surpresa: {
+    description:
+      'Algo inesperado que causa espanto ou admiração; evento ou ação que surpreende.',
+    en: {
+      translation: 'surprise',
+      description:
+        'Something unexpected that causes astonishment or admiration; event or action that surprises.',
+    },
+  },
+  lançamento: {
+    description:
+      'Ato de introduzir algo novo ao público ou mercado; início oficial de um produto ou evento.',
+    en: {
+      translation: 'launch',
+      description:
+        'The act of introducing something new to the public or market; official start of a product or event.',
+    },
+  },
+  aniversário: {
+    description:
+      'Data que comemora o nascimento de alguém ou a ocorrência de um evento especial; celebração anual.',
+    en: {
+      translation: 'birthday',
+      description:
+        "The date that commemorates someone's birth or the occurrence of a special event; annual celebration.",
+    },
+  },
+  voo: {
+    description: 'Deslocamento pelo ar realizado por aeronaves; viagem aérea.',
+    en: {
+      translation: 'flight',
+      description:
+        'Movement through the air performed by aircraft; air travel.',
+    },
+  },
+  estudo: {
+    description:
+      'Atividade de aprendizagem ou investigação sobre um assunto; ato de estudar.',
+    en: {
+      translation: 'study',
+      description:
+        'The activity of learning or researching a subject; the act of studying.',
+    },
+  },
+};
+
+const plurals: { [key: string]: Definition } = {
+  países: definitions.país,
+  informações: definitions.informação,
+  crianças: definitions.criança,
+  mensagens: definitions.mensagem,
+  dados: definitions.dado,
+  contas: definitions.conta,
+  relatórios: definitions.relatório,
+  documentos: definitions.documento,
+  objetivos: definitions.objetivo,
+  alunos: definitions.aluno,
+  clientes: definitions.cliente,
+  treinos: definitions.treino,
+  opções: definitions.opção,
+  avaliações: definitions.avaliação,
+  instruções: definitions.instrução,
+  artigos: definitions.artigo,
+  'e-mails': definitions['e-mail'],
+  convites: definitions.convite,
+  propostas: definitions.proposta,
+  perguntas: definitions.pergunta,
+  críticas: definitions.crítica,
+  conflitos: definitions.conflito,
+  pendências: definitions.pendência,
+  desafios: definitions.desafio,
+  reuniões: definitions.reunião,
+  bonsais: definitions.bonsai,
+  ervas: definitions.erva,
+  sapatos: definitions.sapato,
+  estudos: definitions.estudo,
+  voos: definitions.voo,
+  oportunidades: definitions.oportunidade,
+  prazos: definitions.prazo,
+};
+
+export const keywords: { [key: string]: Definition } = {
+  ...definitions,
+  ...plurals,
 };

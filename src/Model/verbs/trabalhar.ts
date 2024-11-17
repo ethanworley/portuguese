@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const trabalhar: ProblemList = {
+  verb: 'trabalhar',
+  problems: [
+    {
+      sentence: 'Eu {blank} em um projeto novo este mês.',
+      verb: 'trabalhar',
+      tense: 'presente',
+      answers: ['trabalho'],
+    },
+    {
+      sentence: 'Você {blank} muito bem na sua empresa.',
+      verb: 'trabalhar',
+      tense: 'presente',
+      answers: ['trabalha'],
+    },
+    {
+      sentence: 'Ela {blank} como professora na escola local.',
+      verb: 'trabalhar',
+      tense: 'presente',
+      answers: ['trabalha'],
+    },
+    {
+      sentence: 'Nós {blank} juntos para concluir o projeto.',
+      verb: 'trabalhar',
+      tense: 'presente',
+      answers: ['trabalhamos'],
+    },
+    {
+      sentence: 'Vocês {blank} em um time de futebol.',
+      verb: 'trabalhar',
+      tense: 'presente',
+      answers: ['trabalham'],
+    },
+    {
+      sentence: 'Eles {blank} em tecnologia e inovação.',
+      verb: 'trabalhar',
+      tense: 'presente',
+      answers: ['trabalham'],
+    },
+    {
+      sentence: 'Ana {blank} com dedicação todos os dias.',
+      verb: 'trabalhar',
+      tense: 'presente',
+      answers: ['trabalha'],
+    },
+    {
+      sentence: 'João e eu {blank} em um projeto importante.',
+      verb: 'trabalhar',
+      tense: 'presente',
+      answers: ['trabalhamos'],
+    },
+    {
+      sentence: 'Maria e você {blank} no mesmo escritório.',
+      verb: 'trabalhar',
+      tense: 'presente',
+      answers: ['trabalham'],
+    },
+    {
+      sentence: 'Nós todos {blank} para alcançar nossos objetivos.',
+      verb: 'trabalhar',
+      tense: 'presente',
+      answers: ['trabalhamos'],
+    },
+    {
+      sentence: 'Eu {blank} no projeto durante o mês passado.',
+      verb: 'trabalhar',
+      tense: 'pretérito perfeito',
+      answers: ['trabalhei'],
+    },
+    {
+      sentence: 'Ela {blank} muito para terminar o relatório.',
+      verb: 'trabalhar',
+      tense: 'pretérito perfeito',
+      answers: ['trabalhou'],
+    },
+    {
+      sentence: 'Nós {blank} juntos em equipe na semana passada.',
+      verb: 'trabalhar',
+      tense: 'pretérito perfeito',
+      answers: ['trabalhamos'],
+    },
+    {
+      sentence: 'Você {blank} bem no projeto final.',
+      verb: 'trabalhar',
+      tense: 'pretérito perfeito',
+      answers: ['trabalhou'],
+    },
+    {
+      sentence: 'Ele {blank} o dia todo na fábrica.',
+      verb: 'trabalhar',
+      tense: 'pretérito perfeito',
+      answers: ['trabalhou'],
+    },
+    {
+      sentence: 'Maria e João {blank} na mesma empresa por anos.',
+      verb: 'trabalhar',
+      tense: 'pretérito perfeito',
+      answers: ['trabalharam'],
+    },
+    {
+      sentence: 'Nós {blank} com os novos clientes recentemente.',
+      verb: 'trabalhar',
+      tense: 'pretérito perfeito',
+      answers: ['trabalhamos'],
+    },
+    {
+      sentence: 'Vocês {blank} muito durante o evento.',
+      verb: 'trabalhar',
+      tense: 'pretérito perfeito',
+      answers: ['trabalharam'],
+    },
+    {
+      sentence: 'Eu e você {blank} bem naquele projeto.',
+      verb: 'trabalhar',
+      tense: 'pretérito perfeito',
+      answers: ['trabalhamos'],
+    },
+    {
+      sentence: 'Os alunos {blank} duro nas aulas de junho.',
+      verb: 'trabalhar',
+      tense: 'pretérito perfeito',
+      answers: ['trabalharam'],
+    },
+    {
+      sentence: 'Eu {blank} em um projeto importante na próxima semana.',
+      verb: 'trabalhar',
+      tense: 'futuro',
+      answers: ['trabalharei', 'vou trabalhar'],
+    },
+    {
+      sentence: 'Ela {blank} na nova empresa a partir do mês que vem.',
+      verb: 'trabalhar',
+      tense: 'futuro',
+      answers: ['trabalhará', 'vai trabalhar'],
+    },
+    {
+      sentence: 'Nós {blank} juntos no mesmo time no próximo semestre.',
+      verb: 'trabalhar',
+      tense: 'futuro',
+      answers: ['trabalharemos', 'vamos trabalhar'],
+    },
+    {
+      sentence: 'Vocês {blank} em um evento especial no sábado.',
+      verb: 'trabalhar',
+      tense: 'futuro',
+      answers: ['trabalharão', 'vão trabalhar'],
+    },
+    {
+      sentence:
+        'João e Maria {blank} na organização do festival no próximo mês.',
+      verb: 'trabalhar',
+      tense: 'futuro',
+      answers: ['trabalharão', 'vão trabalhar'],
+    },
+    {
+      sentence: 'Eu e você {blank} em casa nos próximos dias.',
+      verb: 'trabalhar',
+      tense: 'futuro',
+      answers: ['trabalharemos', 'vamos trabalhar'],
+    },
+    {
+      sentence: 'Ele {blank} em um novo livro até o final do ano.',
+      verb: 'trabalhar',
+      tense: 'futuro',
+      answers: ['trabalhará', 'vai trabalhar'],
+    },
+    {
+      sentence: 'Nós {blank} em conjunto para alcançar nossos objetivos.',
+      verb: 'trabalhar',
+      tense: 'futuro',
+      answers: ['trabalharemos', 'vamos trabalhar'],
+    },
+    {
+      sentence: 'Vocês {blank} de forma remota a partir do próximo mês.',
+      verb: 'trabalhar',
+      tense: 'futuro',
+      answers: ['trabalharão', 'vão trabalhar'],
+    },
+    {
+      sentence: 'Ela e eu {blank} em um projeto sustentável no futuro.',
+      verb: 'trabalhar',
+      tense: 'futuro',
+      answers: ['trabalharemos', 'vamos trabalhar'],
+    },
+  ],
+};

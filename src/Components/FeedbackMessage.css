@@ -1,15 +1,14 @@
-/* FeedbackMessage.css */
 .feedback-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000; /* Ensure it appears on top */
+  z-index: 1;
 }
 
 .feedback-container {

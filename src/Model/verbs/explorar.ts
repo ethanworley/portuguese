@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const explorar: ProblemList = {
+  verb: 'explorar',
+  problems: [
+    {
+      sentence: 'Eu {blank} novas cidades durante as férias.',
+      verb: 'explorar',
+      tense: 'pretérito perfeito',
+      answers: ['explorei'],
+    },
+    {
+      sentence: 'Ela {blank} as opções de viagem disponíveis.',
+      verb: 'explorar',
+      tense: 'pretérito perfeito',
+      answers: ['explorou'],
+    },
+    {
+      sentence: 'Nós {blank} a cultura local quando viajamos.',
+      verb: 'explorar',
+      tense: 'pretérito perfeito',
+      answers: ['exploramos'],
+    },
+    {
+      sentence: 'Vocês {blank} as belezas naturais da região no verão passado.',
+      verb: 'explorar',
+      tense: 'pretérito perfeito',
+      answers: ['exploraram'],
+    },
+    {
+      sentence: 'Ele {blank} várias trilhas na montanha.',
+      verb: 'explorar',
+      tense: 'pretérito perfeito',
+      answers: ['explorou'],
+    },
+    {
+      sentence: 'Maria {blank} o museu durante sua visita à cidade.',
+      verb: 'explorar',
+      tense: 'pretérito perfeito',
+      answers: ['explorou'],
+    },
+    {
+      sentence: 'João e eu {blank} diferentes áreas da cidade.',
+      verb: 'explorar',
+      tense: 'pretérito perfeito',
+      answers: ['exploramos'],
+    },
+    {
+      sentence: 'Vocês {blank} o mercado local no fim de semana.',
+      verb: 'explorar',
+      tense: 'pretérito perfeito',
+      answers: ['exploraram'],
+    },
+    {
+      sentence: 'A equipe {blank} as opções de investimento antes de decidir.',
+      verb: 'explorar',
+      tense: 'pretérito perfeito',
+      answers: ['explorou'],
+    },
+    {
+      sentence:
+        'Simon {blank} os novos restauantes da cidade na última visita.',
+      verb: 'explorar',
+      tense: 'pretérito perfeito',
+      answers: ['explorou'],
+    },
+    {
+      sentence: 'Eu {blank} novos destinos todo mês.',
+      verb: 'explorar',
+      tense: 'presente',
+      answers: ['exploro'],
+    },
+    {
+      sentence: 'Ela {blank} várias opções de viagem.',
+      verb: 'explorar',
+      tense: 'presente',
+      answers: ['explora'],
+    },
+    {
+      sentence: 'Nós {blank} o centro da cidade frequentemente.',
+      verb: 'explorar',
+      tense: 'presente',
+      answers: ['exploramos'],
+    },
+    {
+      sentence: 'Vocês {blank} a cultura local durante o feriado.',
+      verb: 'explorar',
+      tense: 'presente',
+      answers: ['exploram'],
+    },
+    {
+      sentence: 'Ele {blank} novas trilhas na montanha.',
+      verb: 'explorar',
+      tense: 'presente',
+      answers: ['explora'],
+    },
+    {
+      sentence: 'Maria {blank} as belezas da natureza todos os dias.',
+      verb: 'explorar',
+      tense: 'presente',
+      answers: ['explora'],
+    },
+    {
+      sentence: 'Eu e você {blank} diferentes métodos de aprendizado.',
+      verb: 'explorar',
+      tense: 'presente',
+      answers: ['exploramos'],
+    },
+    {
+      sentence: 'As crianças {blank} o parque durante a tarde.',
+      verb: 'explorar',
+      tense: 'presente',
+      answers: ['exploram'],
+    },
+    {
+      sentence: 'Carlos {blank} as opções de emprego na cidade.',
+      verb: 'explorar',
+      tense: 'presente',
+      answers: ['explora'],
+    },
+    {
+      sentence: 'Vocês {blank} as novas tecnologias na escola.',
+      verb: 'explorar',
+      tense: 'presente',
+      answers: ['exploram'],
+    },
+    {
+      sentence: 'Nós {blank} a nova área do parque no próximo mês.',
+      verb: 'explorar',
+      tense: 'futuro',
+      answers: ['exploraremos', 'vamos explorar'],
+    },
+    {
+      sentence: 'Eu {blank} as montanhas na próxima semana.',
+      verb: 'explorar',
+      tense: 'futuro',
+      answers: ['explorarei', 'vou explorar'],
+    },
+    {
+      sentence: 'Ela {blank} a cidade antiga depois das férias.',
+      verb: 'explorar',
+      tense: 'futuro',
+      answers: ['explorará', 'vai explorar'],
+    },
+    {
+      sentence: 'Você {blank} o museu novo no próximo domingo.',
+      verb: 'explorar',
+      tense: 'futuro',
+      answers: ['explorará', 'vai explorar'],
+    },
+    {
+      sentence: 'Eles {blank} a floresta na próxima primavera.',
+      verb: 'explorar',
+      tense: 'futuro',
+      answers: ['explorarão', 'vão explorar'],
+    },
+    {
+      sentence: 'Nós {blank} novos lugares na viagem de férias.',
+      verb: 'explorar',
+      tense: 'futuro',
+      answers: ['exploraremos', 'vamos explorar'],
+    },
+    {
+      sentence: 'João {blank} as tradições da região no verão.',
+      verb: 'explorar',
+      tense: 'futuro',
+      answers: ['explorará', 'vai explorar'],
+    },
+    {
+      sentence: 'Vocês {blank} as opções de turismo na próxima reunião.',
+      verb: 'explorar',
+      tense: 'futuro',
+      answers: ['explorarão', 'vão explorar'],
+    },
+    {
+      sentence: 'Maria e eu {blank} novos restaurantes na cidade.',
+      verb: 'explorar',
+      tense: 'futuro',
+      answers: ['exploraremos', 'vamos explorar'],
+    },
+    {
+      sentence: 'Elas {blank} as belezas naturais do país nas férias.',
+      verb: 'explorar',
+      tense: 'futuro',
+      answers: ['explorarão', 'vão explorar'],
+    },
+  ],
+};

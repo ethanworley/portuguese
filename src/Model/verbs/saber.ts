@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const saber: ProblemList = {
+  verb: 'saber',
+  problems: [
+    {
+      sentence: 'Eu {blank} a verdade sobre o que aconteceu.',
+      verb: 'saber',
+      tense: 'pretérito perfeito',
+      answers: ['saiba'],
+    },
+    {
+      sentence: 'Ela {blank} a resposta correta na prova.',
+      verb: 'saber',
+      tense: 'pretérito perfeito',
+      answers: ['soube'],
+    },
+    {
+      sentence: 'Nós {blank} da festa surpresa no sábado.',
+      verb: 'saber',
+      tense: 'pretérito perfeito',
+      answers: ['soube'],
+    },
+    {
+      sentence: 'Você {blank} da nova regra do jogo?',
+      verb: 'saber',
+      tense: 'pretérito perfeito',
+      answers: ['soube'],
+    },
+    {
+      sentence: 'João {blank} que precisava estudar mais.',
+      verb: 'saber',
+      tense: 'pretérito perfeito',
+      answers: ['soube'],
+    },
+    {
+      sentence: 'Eles {blank} como resolver o problema.',
+      verb: 'saber',
+      tense: 'pretérito perfeito',
+      answers: ['soubem'],
+    },
+    {
+      sentence: 'Nós {blank} que a reunião foi cancelada.',
+      verb: 'saber',
+      tense: 'pretérito perfeito',
+      answers: ['soubermos'],
+    },
+    {
+      sentence: 'Você e eu {blank} do novo projeto ontem.',
+      verb: 'saber',
+      tense: 'pretérito perfeito',
+      answers: ['soube'],
+    },
+    {
+      sentence: 'Mariana {blank} que tinha que trazer o relatório.',
+      verb: 'saber',
+      tense: 'pretérito perfeito',
+      answers: ['soube'],
+    },
+    {
+      sentence: 'Eles {blank} quais eram as opções disponíveis.',
+      verb: 'saber',
+      tense: 'pretérito perfeito',
+      answers: ['souberam'],
+    },
+    {
+      sentence: 'Eu {blank} a resposta para a prova amanhã.',
+      verb: 'saber',
+      tense: 'futuro',
+      answers: ['saberai', 'vou saber'],
+    },
+    {
+      sentence: 'Ela {blank} a verdade sobre o projeto na próxima reunião.',
+      verb: 'saber',
+      tense: 'futuro',
+      answers: ['saberá', 'vai saber'],
+    },
+    {
+      sentence:
+        'Nós {blank} se precisamos comprar mais materiais na próxima semana.',
+      verb: 'saber',
+      tense: 'futuro',
+      answers: ['saberemos', 'vamos saber'],
+    },
+    {
+      sentence: 'Vocês {blank} os resultados das provas no próximo mês.',
+      verb: 'saber',
+      tense: 'futuro',
+      answers: ['saberão', 'vão saber'],
+    },
+    {
+      sentence: 'Pedro {blank} como jogar o jogo novo na próxima sexta-feira.',
+      verb: 'saber',
+      tense: 'futuro',
+      answers: ['saberá', 'vai saber'],
+    },
+    {
+      sentence: 'Eu e Maria {blank} se o evento foi cancelado até amanhã.',
+      verb: 'saber',
+      tense: 'futuro',
+      answers: ['saberemos', 'vamos saber'],
+    },
+    {
+      sentence: 'Você {blank} as novidades sobre a empresa na próxima visita.',
+      verb: 'saber',
+      tense: 'futuro',
+      answers: ['saberá', 'vai saber'],
+    },
+    {
+      sentence: 'Elas {blank} o que aconteceu na festa no final de semana.',
+      verb: 'saber',
+      tense: 'futuro',
+      answers: ['saberão', 'vão saber'],
+    },
+    {
+      sentence: 'Nós {blank} a resposta correta no teste na próxima semana.',
+      verb: 'saber',
+      tense: 'futuro',
+      answers: ['saberemos', 'vamos saber'],
+    },
+    {
+      sentence: 'Carlos {blank} as regras do jogo até sábado.',
+      verb: 'saber',
+      tense: 'futuro',
+      answers: ['saberá', 'vai saber'],
+    },
+    {
+      sentence: 'Eu {blank} a resposta correta para a pergunta.',
+      verb: 'saber',
+      tense: 'presente',
+      answers: ['sei'],
+    },
+    {
+      sentence: 'Ela {blank} onde fica a biblioteca.',
+      verb: 'saber',
+      tense: 'presente',
+      answers: ['sabe'],
+    },
+    {
+      sentence: 'Nós {blank} que o evento foi cancelado.',
+      verb: 'saber',
+      tense: 'presente',
+      answers: ['sabemos'],
+    },
+    {
+      sentence: 'Você {blank} a data da festa de aniversário.',
+      verb: 'saber',
+      tense: 'presente',
+      answers: ['sabe'],
+    },
+    {
+      sentence: 'Eles {blank} como chegar ao restaurante.',
+      verb: 'saber',
+      tense: 'presente',
+      answers: ['sabem'],
+    },
+    {
+      sentence: 'Ana {blank} que o filme começa às oito.',
+      verb: 'saber',
+      tense: 'presente',
+      answers: ['sabe'],
+    },
+    {
+      sentence: 'Você e eu {blank} que precisamos estudar.',
+      verb: 'saber',
+      tense: 'presente',
+      answers: ['sabemos'],
+    },
+    {
+      sentence: 'Carlos {blank} todas as respostas do teste.',
+      verb: 'saber',
+      tense: 'presente',
+      answers: ['sabe'],
+    },
+    {
+      sentence: 'Tu {blank} como jogar futebol.',
+      verb: 'saber',
+      tense: 'presente',
+      answers: ['sabes'],
+    },
+    {
+      sentence: 'Joana e Luiza {blank} que vão viajar amanhã.',
+      verb: 'saber',
+      tense: 'presente',
+      answers: ['sabem'],
+    },
+  ],
+};

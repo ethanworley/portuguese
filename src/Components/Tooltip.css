@@ -1,11 +1,9 @@
-/* Tooltip wrapper */
 .tooltip-wrapper {
   display: inline-block;
   position: relative;
   cursor: pointer;
 }
 
-/* Tooltip box styling */
 .tooltip-box {
   position: fixed;
   top: 20vh;
@@ -17,11 +15,11 @@
   border-radius: 4px;
   font-size: 16px;
   font-weight: normal;
-  white-space: normal; /* Allow text to wrap */
-  word-wrap: break-word; /* Break words that are too long */
+  white-space: normal;
+  word-wrap: break-word;
   width: max-content;
-  max-width: 80vw; /* Set a maximum width to control tooltip size */
-  z-index: 1000;
+  max-width: 80vw;
+  z-index: 1;
   opacity: 0;
   transition: opacity 0.1s;
   pointer-events: none;
@@ -32,7 +30,6 @@
   color: white;
 }
 
-/* Show the tooltip */
 .tooltip-trigger:hover + .tooltip-box {
   opacity: 1;
 }

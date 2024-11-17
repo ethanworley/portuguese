@@ -1,31 +1,70 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import './App.css';
 import { Definition, verbsDictionary, keywords } from './Model/Definitions';
-import { Problem, problems, Tense } from './Model/Problems';
+import { Problem, problems, Tense, tenses } from './Model/Problems';
+import * as Verbs from './Model/verbs';
 import Tooltip from './Components/Tooltip';
 import FeedbackMessage, { FeedbackResult } from './Components/FeedbackMessage';
 import { ReactComponent as SettingsIcon } from './settingsicon.svg';
 import SettingsMenu from './Components/SettingsMenu';
 
-const locale = 'pt-BR';
+export const locale = 'pt-BR';
 
 export interface KeywordResult {
   sentence: JSX.Element;
   count: number;
 }
 
+function numberToLetters(n: number): string {
+  let result = '';
+
+  while (n >= 0) {
+    const remainder = n % 26;
+    result = String.fromCharCode(remainder + 97) + result; // 97 is the ASCII code for 'a'
+    n = Math.floor(n / 26) - 1; // Adjust for zero-based indexing
+  }
+
+  return result;
+}
+
 export const addKeywords = (
   sentence: string,
   inputRef?: React.RefObject<HTMLInputElement>
 ): KeywordResult => {
+  const keywordRegex = /\[([^\]]+)\]/g; // matches [arbitrary keyword] in a sentence
+  const arbitraryKeywords: { [placeholder: string]: string } = {};
+  let modifiedSentence = sentence;
+  let match;
+  let placeholderIndex = 0;
+
+  while ((match = keywordRegex.exec(sentence)) !== null) {
+    const fullMatch = match[0];
+    const keywordPhrase = match[1];
+    // e.g. arbitrarykeyworda through arbitrarykeywordz
+    const placeholder = `arbitrarykeyword${numberToLetters(placeholderIndex)}`;
+
+    modifiedSentence = modifiedSentence.replace(fullMatch, placeholder);
+
+    arbitraryKeywords[placeholder] = keywordPhrase.toLocaleLowerCase(locale);
+
+    placeholderIndex++;
+  }
+
+  sentence = modifiedSentence;
+
   const words = sentence.split(' ');
   const sentenceElements: (JSX.Element | string)[] = [];
   var count = 0;
 
   words.forEach((word, index) => {
     const match = word.match(/(\p{L}+)(\p{P}*)/u);
-    const actualWord = match ? match[1].toLocaleLowerCase(locale) : word;
+    let actualWord = match ? match[1].toLocaleLowerCase(locale) : word;
     const punctuation = match ? match[2] : '';
+    const arbitraryKeyword = arbitraryKeywords[actualWord];
+
+    if (arbitraryKeyword) {
+      actualWord = arbitraryKeyword;
+    }
 
     if (keywords[actualWord]) {
       count++;
@@ -78,16 +117,34 @@ function App() {
     visible: false,
   });
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-  const [tenseState, setTenseState] = useState<Record<Tense, boolean>>({
-    presente: true,
-    'pretérito perfeito': true,
-    futuro: true,
+
+  const [tenseState, setTenseState] = useState<Record<Tense, boolean>>(() => {
+    return tenses.reduce(
+      (record, tense) => {
+        record[tense] = true;
+        return record;
+      },
+      {} as Record<Tense, boolean>
+    );
   });
 
-  const getNewProblem = useCallback(() => {
-    const filteredProblems = problems.filter(
-      (problem) => tenseState[problem.tense as Tense]
+  const [verbState, setVerbState] = useState<Record<string, boolean>>(() => {
+    return Object.keys(Verbs).reduce(
+      (record, verb) => {
+        record[verb] = true;
+        return record;
+      },
+      {} as Record<string, boolean>
     );
+  });
+
+  const filteredProblems = useMemo(() => {
+    return problems
+      .filter((problem) => tenseState[problem.tense as Tense])
+      .filter((problem) => verbState[problem.verb] ?? true);
+  }, [tenseState, verbState]);
+
+  const getNewProblem = useCallback(() => {
     if (filteredProblems.length === 0) {
       return;
     }
@@ -105,13 +162,36 @@ function App() {
       inputRef.current.value = '';
       inputRef.current.focus();
     }
-  }, [tenseState, inputRef]);
+  }, [filteredProblems, inputRef]);
 
   const toggleTense = (tense: Tense) => {
     setTenseState((prevState) => ({
       ...prevState,
       [tense]: !prevState[tense],
     }));
+  };
+
+  const toggleVerb = (verb: string) => {
+    setVerbState((prevState) => ({
+      ...prevState,
+      [verb]: !prevState[verb],
+    }));
+  };
+  const selectAllVerbs = () => {
+    for (const verb in Verbs) {
+      setVerbState((prevState) => ({
+        ...prevState,
+        [verb]: true,
+      }));
+    }
+  };
+  const deselectAllVerbs = () => {
+    for (const verb in Verbs) {
+      setVerbState((prevState) => ({
+        ...prevState,
+        [verb]: false,
+      }));
+    }
   };
 
   const normalizeAnswer = (text: string) => {
@@ -179,10 +259,17 @@ function App() {
             className="settings-button"
             onClick={() => setIsSettingsOpen(!isSettingsOpen)}
           >
-            <SettingsIcon />
+            <SettingsIcon className="settings-icon" />
           </button>
           {isSettingsOpen && (
-            <SettingsMenu tenseState={tenseState} toggleTense={toggleTense} />
+            <SettingsMenu
+              tenseState={tenseState}
+              toggleTense={toggleTense}
+              verbState={verbState}
+              toggleVerb={toggleVerb}
+              selectAllVerbs={selectAllVerbs}
+              deselectAllVerbs={deselectAllVerbs}
+            />
           )}
         </div>
         <form
@@ -223,6 +310,8 @@ function App() {
           onTryAgain={closeFeedback(false)}
         />
       )}
+
+      <footer className="App-footer">{filteredProblems.length} frases</footer>
     </div>
   );
 }

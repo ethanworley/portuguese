@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const resolver: ProblemList = {
+  verb: 'resolver',
+  problems: [
+    {
+      sentence: 'Eu {blank} o problema com facilidade.',
+      verb: 'resolver',
+      tense: 'pretérito perfeito',
+      answers: ['resolvi'],
+    },
+    {
+      sentence: 'Ela {blank} a situação diplomática ontem.',
+      verb: 'resolver',
+      tense: 'pretérito perfeito',
+      answers: ['resolveu'],
+    },
+    {
+      sentence: 'Nós {blank} as pendências na semana passada.',
+      verb: 'resolver',
+      tense: 'pretérito perfeito',
+      answers: ['resolvemos'],
+    },
+    {
+      sentence: 'Vocês {blank} todos os desafios do projeto.',
+      verb: 'resolver',
+      tense: 'pretérito perfeito',
+      answers: ['resolveram'],
+    },
+    {
+      sentence: 'Carlos {blank} a questão da manutenção do carro.',
+      verb: 'resolver',
+      tense: 'pretérito perfeito',
+      answers: ['resolveu'],
+    },
+    {
+      sentence: 'Eu e Maria {blank} o impasse na negociação.',
+      verb: 'resolver',
+      tense: 'pretérito perfeito',
+      answers: ['resolvemos'],
+    },
+    {
+      sentence: 'A equipe {blank} os conflitos internos de forma eficiente.',
+      verb: 'resolver',
+      tense: 'pretérito perfeito',
+      answers: ['resolveu'],
+    },
+    {
+      sentence: 'Tu {blank} o problema de matemática rapidamente.',
+      verb: 'resolver',
+      tense: 'pretérito perfeito',
+      answers: ['resolveste'],
+    },
+    {
+      sentence: 'Eles {blank} a situação antes da reunião.',
+      verb: 'resolver',
+      tense: 'pretérito perfeito',
+      answers: ['resolveram'],
+    },
+    {
+      sentence: 'Ana e eu {blank} o desafio e conseguimos levar a cabo.',
+      verb: 'resolver',
+      tense: 'pretérito perfeito',
+      answers: ['resolvemos'],
+    },
+    {
+      sentence: 'Eu {blank} o problema até amanhã.',
+      verb: 'resolver',
+      tense: 'futuro',
+      answers: ['resolverei', 'vou resolver'],
+    },
+    {
+      sentence: 'Você {blank} a situação antes do prazo.',
+      verb: 'resolver',
+      tense: 'futuro',
+      answers: ['resolverá', 'vai resolver'],
+    },
+    {
+      sentence: 'Ela {blank} todos os desafios com calma.',
+      verb: 'resolver',
+      tense: 'futuro',
+      answers: ['resolverá', 'vai resolver'],
+    },
+    {
+      sentence: 'Nós {blank} as questões pendentes nesta reunião.',
+      verb: 'resolver',
+      tense: 'futuro',
+      answers: ['resolveremos', 'vamos resolver'],
+    },
+    {
+      sentence: 'Eles {blank} a disputa no próximo mês.',
+      verb: 'resolver',
+      tense: 'futuro',
+      answers: ['resolverão', 'vão resolver'],
+    },
+    {
+      sentence: 'Você e eu {blank} o que for preciso para ajudar.',
+      verb: 'resolver',
+      tense: 'futuro',
+      answers: ['resolveremos', 'vamos resolver'],
+    },
+    {
+      sentence: 'Maria {blank} as pendências logo mais.',
+      verb: 'resolver',
+      tense: 'futuro',
+      answers: ['resolverá', 'vai resolver'],
+    },
+    {
+      sentence: 'Pedro e Ana {blank} as dúvidas amanhã.',
+      verb: 'resolver',
+      tense: 'futuro',
+      answers: ['resolverão', 'vão resolver'],
+    },
+    {
+      sentence:
+        'A equipe {blank} as questões mais urgentes até o final do dia.',
+      verb: 'resolver',
+      tense: 'futuro',
+      answers: ['resolverá', 'vai resolver'],
+    },
+    {
+      sentence: 'Vocês {blank} esse problema em breve.',
+      verb: 'resolver',
+      tense: 'futuro',
+      answers: ['resolverão', 'vão resolver'],
+    },
+    {
+      sentence: 'Eu {blank} os problemas de matemática para a prova.',
+      verb: 'resolver',
+      tense: 'presente',
+      answers: ['resolvo'],
+    },
+    {
+      sentence: 'Você {blank} todas as questões durante a aula.',
+      verb: 'resolver',
+      tense: 'presente',
+      answers: ['resolve'],
+    },
+    {
+      sentence: 'Ela {blank} os desafios da empresa com eficiência.',
+      verb: 'resolver',
+      tense: 'presente',
+      answers: ['resolve'],
+    },
+    {
+      sentence: 'Nós {blank} as pendências antes do deadline.',
+      verb: 'resolver',
+      tense: 'presente',
+      answers: ['resolvemos'],
+    },
+    {
+      sentence: 'Eles {blank} os conflitos de maneira rápida.',
+      verb: 'resolver',
+      tense: 'presente',
+      answers: ['resolvem'],
+    },
+    {
+      sentence: 'Pedro {blank} o problema de engenharia sozinho.',
+      verb: 'resolver',
+      tense: 'presente',
+      answers: ['resolve'],
+    },
+    {
+      sentence: 'Maria e eu {blank} as questões do projeto juntas.',
+      verb: 'resolver',
+      tense: 'presente',
+      answers: ['resolvemos'],
+    },
+    {
+      sentence: 'Vocês {blank} a situação complicada de forma legal.',
+      verb: 'resolver',
+      tense: 'presente',
+      answers: ['resolvem'],
+    },
+    {
+      sentence: 'Ele {blank} as dificuldades com paciência.',
+      verb: 'resolver',
+      tense: 'presente',
+      answers: ['resolve'],
+    },
+    {
+      sentence: 'Ana e você {blank} os problemas na reunião.',
+      verb: 'resolver',
+      tense: 'presente',
+      answers: ['resolvem'],
+    },
+  ],
+};

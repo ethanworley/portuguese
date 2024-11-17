@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const passar: ProblemList = {
+  verb: 'passar',
+  problems: [
+    {
+      sentence: 'Nós {blank} a prova na próxima semana.',
+      verb: 'passar',
+      tense: 'futuro',
+      answers: ['passaremos', 'vamos passar'],
+    },
+    {
+      sentence: 'Ela {blank} por aqui amanhã de manhã.',
+      verb: 'passar',
+      tense: 'futuro',
+      answers: ['passará', 'vai passar'],
+    },
+    {
+      sentence: 'Eu {blank} na sua casa no próximo sábado.',
+      verb: 'passar',
+      tense: 'futuro',
+      answers: ['passarei', 'vou passar'],
+    },
+    {
+      sentence: 'Você {blank} muito tempo estudando esta semana.',
+      verb: 'passar',
+      tense: 'futuro',
+      answers: ['passará', 'vai passar'],
+    },
+    {
+      sentence: 'Eles {blank} férias em família no próximo verão.',
+      verb: 'passar',
+      tense: 'futuro',
+      answers: ['passarão', 'vão passar'],
+    },
+    {
+      sentence: 'Maria {blank} um tempo com os amigos na próxima sexta.',
+      verb: 'passar',
+      tense: 'futuro',
+      answers: ['passará', 'vai passar'],
+    },
+    {
+      sentence: 'Nós {blank} os dias juntos na próxima viagem.',
+      verb: 'passar',
+      tense: 'futuro',
+      answers: ['passaremos', 'vamos passar'],
+    },
+    {
+      sentence:
+        'João {blank} uma boa impressão na apresentação do mês que vem.',
+      verb: 'passar',
+      tense: 'futuro',
+      answers: ['passará', 'vai passar'],
+    },
+    {
+      sentence: 'Vocês {blank} o fim de semana com a família.',
+      verb: 'passar',
+      tense: 'futuro',
+      answers: ['passarão', 'vão passar'],
+    },
+    {
+      sentence: 'Ana e Pedro {blank} o dia no parque no próximo domingo.',
+      verb: 'passar',
+      tense: 'futuro',
+      answers: ['passarão', 'vão passar'],
+    },
+    {
+      sentence: 'Eu {blank} um bom tempo com meus amigos no fim de semana.',
+      verb: 'passar',
+      tense: 'pretérito perfeito',
+      answers: ['passei'],
+    },
+    {
+      sentence: 'Ela {blank} em casa durante as férias.',
+      verb: 'passar',
+      tense: 'pretérito perfeito',
+      answers: ['passou'],
+    },
+    {
+      sentence: 'Nós {blank} muito tempo estudando para a prova.',
+      verb: 'passar',
+      tense: 'pretérito perfeito',
+      answers: ['passamos'],
+    },
+    {
+      sentence: 'Você {blank} a tarde assistindo filmes.',
+      verb: 'passar',
+      tense: 'pretérito perfeito',
+      answers: ['passou'],
+    },
+    {
+      sentence: 'Eles {blank} a noite jogando videogame.',
+      verb: 'passar',
+      tense: 'pretérito perfeito',
+      answers: ['passaram'],
+    },
+    {
+      sentence: 'Maria {blank} por momentos difíceis, mas superou.',
+      verb: 'passar',
+      tense: 'pretérito perfeito',
+      answers: ['passou'],
+    },
+    {
+      sentence: 'João {blank} as férias viajando pelo Brasil.',
+      verb: 'passar',
+      tense: 'pretérito perfeito',
+      answers: ['passou'],
+    },
+    {
+      sentence: 'Nós {blank} os últimos dias organizando a festa.',
+      verb: 'passar',
+      tense: 'pretérito perfeito',
+      answers: ['passamos'],
+    },
+    {
+      sentence: 'Você e eu {blank} horas no telefone ontem.',
+      verb: 'passar',
+      tense: 'pretérito perfeito',
+      answers: ['passamos'],
+    },
+    {
+      sentence: 'As meninas {blank} a tarde na piscina.',
+      verb: 'passar',
+      tense: 'pretérito perfeito',
+      answers: ['passaram'],
+    },
+    {
+      sentence: 'Eu {blank} muito tempo estudando todos os dias.',
+      verb: 'passar',
+      tense: 'presente',
+      answers: ['passo'],
+    },
+    {
+      sentence: 'Ela {blank} os fins de semana na casa da avó.',
+      verb: 'passar',
+      tense: 'presente',
+      answers: ['passa'],
+    },
+    {
+      sentence: 'Nós {blank} frequentemente pela praça após o trabalho.',
+      verb: 'passar',
+      tense: 'presente',
+      answers: ['passamos'],
+    },
+    {
+      sentence: 'Você {blank} a maior parte do dia em casa.',
+      verb: 'passar',
+      tense: 'presente',
+      answers: ['passa'],
+    },
+    {
+      sentence: 'Eles {blank} as férias na praia.',
+      verb: 'passar',
+      tense: 'presente',
+      answers: ['passam'],
+    },
+    {
+      sentence: 'Você e eu {blank} muito tempo juntos no colégio.',
+      verb: 'passar',
+      tense: 'presente',
+      answers: ['passamos'],
+    },
+    {
+      sentence: 'Carlos {blank} horas jogando videogame.',
+      verb: 'passar',
+      tense: 'presente',
+      answers: ['passa'],
+    },
+    {
+      sentence: 'Maria {blank} tempo demais no telefone.',
+      verb: 'passar',
+      tense: 'presente',
+      answers: ['passa'],
+    },
+    {
+      sentence: 'Nós {blank} a tarde toda no parque.',
+      verb: 'passar',
+      tense: 'presente',
+      answers: ['passamos'],
+    },
+    {
+      sentence: 'Vocês {blank} muito tempo planejando a festa.',
+      verb: 'passar',
+      tense: 'presente',
+      answers: ['passam'],
+    },
+  ],
+};
