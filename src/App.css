@@ -13,7 +13,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
   flex: 1;
 }
@@ -47,7 +46,6 @@
   color: white;
   border-radius: 3px;
   background-color: #fff2;
-  font-size: calc(10px + 2vmin);
   width: 8em;
 }
 

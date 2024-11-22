@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const crescer: ProblemList = {
+  verb: 'crescer',
+  problems: [
+    {
+      sentence: 'Eu {blank} muito desde que comecei a treinar.',
+      verb: 'crescer',
+      tense: 'presente',
+      answers: ['cresço'],
+    },
+    {
+      sentence: 'Ela {blank} bastante em suas habilidades de desenho.',
+      verb: 'crescer',
+      tense: 'presente',
+      answers: ['cresce'],
+    },
+    {
+      sentence: 'Nós {blank} juntos em conhecimento todos os dias.',
+      verb: 'crescer',
+      tense: 'presente',
+      answers: ['crescemos'],
+    },
+    {
+      sentence: 'Você {blank} muito em seu trabalho este ano.',
+      verb: 'crescer',
+      tense: 'presente',
+      answers: ['cresce'],
+    },
+    {
+      sentence: 'Eles {blank} como pessoas a cada projeto que fazem.',
+      verb: 'crescer',
+      tense: 'presente',
+      answers: ['crescem'],
+    },
+    {
+      sentence: 'A Maria {blank} em responsabilidade na equipe.',
+      verb: 'crescer',
+      tense: 'presente',
+      answers: ['cresce'],
+    },
+    {
+      sentence: 'João e eu {blank} mais próximos ao longo do tempo.',
+      verb: 'crescer',
+      tense: 'presente',
+      answers: ['crescemos'],
+    },
+    {
+      sentence: 'As crianças {blank} rápido em altura durante o verão.',
+      verb: 'crescer',
+      tense: 'presente',
+      answers: ['crescem'],
+    },
+    {
+      sentence: 'Você e eu {blank} em experiência ao longo dos anos.',
+      verb: 'crescer',
+      tense: 'presente',
+      answers: ['crescemos'],
+    },
+    {
+      sentence: 'Ela sempre {blank} ao aprender coisas novas.',
+      verb: 'crescer',
+      tense: 'presente',
+      answers: ['cresce'],
+    },
+    {
+      sentence: 'Eu {blank} muito desde o último verão.',
+      verb: 'crescer',
+      tense: 'pretérito perfeito',
+      answers: ['cresci'],
+    },
+    {
+      sentence: 'Ela {blank} bastante durante o período escolar.',
+      verb: 'crescer',
+      tense: 'pretérito perfeito',
+      answers: ['cresceu'],
+    },
+    {
+      sentence: 'Nós {blank} juntos no último ano.',
+      verb: 'crescer',
+      tense: 'pretérito perfeito',
+      answers: ['crescemos'],
+    },
+    {
+      sentence: 'Você {blank} muito como profissional nos últimos meses.',
+      verb: 'crescer',
+      tense: 'pretérito perfeito',
+      answers: ['cresceu'],
+    },
+    {
+      sentence: 'Eles {blank} felizes após a promoção.',
+      verb: 'crescer',
+      tense: 'pretérito perfeito',
+      answers: ['cresceram'],
+    },
+    {
+      sentence: 'Maria {blank} em conhecimento ao longo do curso.',
+      verb: 'crescer',
+      tense: 'pretérito perfeito',
+      answers: ['cresceu'],
+    },
+    {
+      sentence: 'Carlos e eu {blank} muito em nossa amizade.',
+      verb: 'crescer',
+      tense: 'pretérito perfeito',
+      answers: ['crescemos'],
+    },
+    {
+      sentence: 'Você e João {blank} muito nesse projeto.',
+      verb: 'crescer',
+      tense: 'pretérito perfeito',
+      answers: ['cresceram'],
+    },
+    {
+      sentence: 'As crianças {blank} muito nos últimos meses.',
+      verb: 'crescer',
+      tense: 'pretérito perfeito',
+      answers: ['cresceram'],
+    },
+    {
+      sentence: 'Ana {blank} entre os melhores alunos da classe.',
+      verb: 'crescer',
+      tense: 'pretérito perfeito',
+      answers: ['cresceu'],
+    },
+    {
+      sentence: 'Eu {blank} muito nesta nova escola.',
+      verb: 'crescer',
+      tense: 'futuro',
+      answers: ['crescerei', 'vou crescer'],
+    },
+    {
+      sentence: 'Ela {blank} bastante na carreira nos próximos anos.',
+      verb: 'crescer',
+      tense: 'futuro',
+      answers: ['crescerá', 'vai crescer'],
+    },
+    {
+      sentence: 'Nós {blank} juntos como equipe para melhorar os resultados.',
+      verb: 'crescer',
+      tense: 'futuro',
+      answers: ['cresceremos', 'vamos crescer'],
+    },
+    {
+      sentence:
+        'Vocês {blank} muito em responsabilidade a partir do próximo mês.',
+      verb: 'crescer',
+      tense: 'futuro',
+      answers: ['crescerão', 'vão crescer'],
+    },
+    {
+      sentence: 'João {blank} em sabedoria e experiência ao longo do tempo.',
+      verb: 'crescer',
+      tense: 'futuro',
+      answers: ['crescerá', 'vai crescer'],
+    },
+    {
+      sentence: 'Eu e você {blank} forte juntos para superar desafios.',
+      verb: 'crescer',
+      tense: 'futuro',
+      answers: ['cresceremos', 'vamos crescer'],
+    },
+    {
+      sentence: 'Elas {blank} em número e influência no mercado.',
+      verb: 'crescer',
+      tense: 'futuro',
+      answers: ['crescerão', 'vão crescer'],
+    },
+    {
+      sentence: 'Meu filho {blank} bastante nos próximos meses.',
+      verb: 'crescer',
+      tense: 'futuro',
+      answers: ['crescerá', 'vai crescer'],
+    },
+    {
+      sentence: 'Nós {blank} juntos diante das dificuldades.',
+      verb: 'crescer',
+      tense: 'futuro',
+      answers: ['cresceremos', 'vamos crescer'],
+    },
+    {
+      sentence: 'Vocês {blank} em conhecimento após a nova experiência.',
+      verb: 'crescer',
+      tense: 'futuro',
+      answers: ['crescerão', 'vão crescer'],
+    },
+  ],
+};

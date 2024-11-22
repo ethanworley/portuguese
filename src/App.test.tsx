@@ -22,7 +22,10 @@ test('checks that definitions exist for all verbs used in problems', () => {
   const missingVerbs: string[] = [];
 
   problems.forEach((problem) => {
-    if (!verbsDictionary[problem.verb]) {
+    if (
+      !verbsDictionary[problem.verb] &&
+      !missingVerbs.includes(problem.verb)
+    ) {
       missingVerbs.push(problem.verb);
     }
   });

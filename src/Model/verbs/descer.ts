@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const descer: ProblemList = {
+  verb: 'descer',
+  problems: [
+    {
+      sentence: 'Eu {blank} as escadas com cuidado.',
+      verb: 'descer',
+      tense: 'presente',
+      answers: ['desço'],
+    },
+    {
+      sentence: 'Ela {blank} do ônibus na próxima parada.',
+      verb: 'descer',
+      tense: 'presente',
+      answers: ['desce'],
+    },
+    {
+      sentence: 'Nós {blank} para o térreo antes do almoço.',
+      verb: 'descer',
+      tense: 'presente',
+      answers: ['descemos'],
+    },
+    {
+      sentence: 'Vocês {blank} um pouco mais cedo hoje.',
+      verb: 'descer',
+      tense: 'presente',
+      answers: ['descem'],
+    },
+    {
+      sentence: 'João {blank} a ladeira todos os dias para ir à escola.',
+      verb: 'descer',
+      tense: 'presente',
+      answers: ['desce'],
+    },
+    {
+      sentence: 'Maria e eu {blank} juntos para a festa.',
+      verb: 'descer',
+      tense: 'presente',
+      answers: ['descemos'],
+    },
+    {
+      sentence: 'Eles {blank} rapidamente para pegar o ônibus.',
+      verb: 'descer',
+      tense: 'presente',
+      answers: ['descem'],
+    },
+    {
+      sentence: 'Você {blank} as escadas ou o elevador?',
+      verb: 'descer',
+      tense: 'presente',
+      answers: ['desce'],
+    },
+    {
+      sentence: 'Meu irmão {blank} para brincar com os amigos.',
+      verb: 'descer',
+      tense: 'presente',
+      answers: ['desce'],
+    },
+    {
+      sentence: 'Nós e vocês {blank} juntos no próximo evento.',
+      verb: 'descer',
+      tense: 'presente',
+      answers: ['descemos'],
+    },
+    {
+      sentence: 'Eu {blank} as escadas rapidamente.',
+      verb: 'descer',
+      tense: 'pretérito perfeito',
+      answers: ['desci'],
+    },
+    {
+      sentence: 'Ela {blank} do ônibus na parada certa.',
+      verb: 'descer',
+      tense: 'pretérito perfeito',
+      answers: ['desceu'],
+    },
+    {
+      sentence: 'Nós {blank} no elevador, mas ele quebrou.',
+      verb: 'descer',
+      tense: 'pretérito perfeito',
+      answers: ['descemos'],
+    },
+    {
+      sentence: 'Você {blank} para o andar de baixo com cuidado.',
+      verb: 'descer',
+      tense: 'pretérito perfeito',
+      answers: ['desceu'],
+    },
+    {
+      sentence: 'Eles {blank} da montanha cansados, mas felizes.',
+      verb: 'descer',
+      tense: 'pretérito perfeito',
+      answers: ['desceram'],
+    },
+    {
+      sentence: 'Maria {blank} as escadas two passos de cada vez.',
+      verb: 'descer',
+      tense: 'pretérito perfeito',
+      answers: ['desceu'],
+    },
+    {
+      sentence: 'João e eu {blank} juntos para o evento.',
+      verb: 'descer',
+      tense: 'pretérito perfeito',
+      answers: ['descemos'],
+    },
+    {
+      sentence: 'Vocês {blank} do carro antes de entrar na festa.',
+      verb: 'descer',
+      tense: 'pretérito perfeito',
+      answers: ['desceram'],
+    },
+    {
+      sentence:
+        'O professor {blank} para a sala de aula antes da aula começar.',
+      verb: 'descer',
+      tense: 'pretérito perfeito',
+      answers: ['desceu'],
+    },
+    {
+      sentence: 'Ana e Maria {blank} e foram sorrindo.',
+      verb: 'descer',
+      tense: 'pretérito perfeito',
+      answers: ['desceram'],
+    },
+    {
+      sentence: 'Eu {blank} ao andar de escada amanhã.',
+      verb: 'descer',
+      tense: 'futuro',
+      answers: ['descerei', 'vou descer'],
+    },
+    {
+      sentence: 'Você {blank} as escadas do prédio na próxima semana.',
+      verb: 'descer',
+      tense: 'futuro',
+      answers: ['descerá', 'vai descer'],
+    },
+    {
+      sentence: 'Nós {blank} para o andar de baixo depois do almoço.',
+      verb: 'descer',
+      tense: 'futuro',
+      answers: ['desceremos', 'vamos descer'],
+    },
+    {
+      sentence: 'Eles {blank} para o lobby do hotel na manhã seguinte.',
+      verb: 'descer',
+      tense: 'futuro',
+      answers: ['descerão', 'vão descer'],
+    },
+    {
+      sentence: 'Ela {blank} até a recepção amanhã de manhã.',
+      verb: 'descer',
+      tense: 'futuro',
+      answers: ['descerá', 'vai descer'],
+    },
+    {
+      sentence: 'Vocês {blank} a pista de dança na festa no sábado.',
+      verb: 'descer',
+      tense: 'futuro',
+      answers: ['descerão', 'vão descer'],
+    },
+    {
+      sentence: 'Ricardo {blank} as escadas rapidamente na próxima terça.',
+      verb: 'descer',
+      tense: 'futuro',
+      answers: ['descerá', 'vai descer'],
+    },
+    {
+      sentence: 'Maria e eu {blank} para o jardim depois do jantar.',
+      verb: 'descer',
+      tense: 'futuro',
+      answers: ['desceremos', 'vamos descer'],
+    },
+    {
+      sentence: 'Tiago e Ana {blank} para o andar debaixo na próxima hora.',
+      verb: 'descer',
+      tense: 'futuro',
+      answers: ['descerão', 'vão descer'],
+    },
+    {
+      sentence: 'A professora {blank} ao escritório depois da aula amanhã.',
+      verb: 'descer',
+      tense: 'futuro',
+      answers: ['descerá', 'vai descer'],
+    },
+  ],
+};

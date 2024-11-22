@@ -119,23 +119,50 @@ function App() {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
   const [tenseState, setTenseState] = useState<Record<Tense, boolean>>(() => {
-    return tenses.reduce(
-      (record, tense) => {
-        record[tense] = true;
-        return record;
-      },
-      {} as Record<Tense, boolean>
-    );
+    const params = new URLSearchParams(window.location.search);
+    const tensesParam = params.get('tenses'); // e.g., "past,present,future"
+
+    const initialTenseState: Record<Tense, boolean> = {
+      presente: false,
+      'pretérito perfeito': false,
+      futuro: false,
+    };
+
+    if (tensesParam) {
+      const tenseQueries = tensesParam
+        .split(',')
+        .map((t) => t.trim().toLowerCase());
+      for (const tense of tenseQueries) {
+        if (tenses.includes(tense as Tense)) {
+          initialTenseState[tense as Tense] = true;
+        }
+      }
+    } else {
+      for (const tense of tenses) {
+        initialTenseState[tense] = true;
+      }
+    }
+
+    return initialTenseState;
   });
 
   const [verbState, setVerbState] = useState<Record<string, boolean>>(() => {
-    return Object.keys(Verbs).reduce(
-      (record, verb) => {
-        record[verb] = true;
-        return record;
-      },
-      {} as Record<string, boolean>
-    );
+    const params = new URLSearchParams(window.location.search);
+    const verbsParam = params.get('verbs');
+    const initialVerbState: Record<string, boolean> = {};
+
+    if (verbsParam) {
+      const verbs = verbsParam.split(',').map((v) => v.trim().toLowerCase());
+      for (const verb in Verbs) {
+        initialVerbState[verb] = verbs.includes(verb.toLowerCase());
+      }
+    } else {
+      for (const verb in Verbs) {
+        initialVerbState[verb] = true;
+      }
+    }
+
+    return initialVerbState;
   });
 
   const filteredProblems = useMemo(() => {

@@ -1,0 +1,188 @@
+import { ProblemList } from '../Problems';
+
+export const vender: ProblemList = {
+  verb: 'vender',
+  problems: [
+    {
+      sentence: 'Eu {blank} a minha bicicleta nova todos os dias.',
+      verb: 'vender',
+      tense: 'presente',
+      answers: ['vendo'],
+    },
+    {
+      sentence: 'Ela {blank} muito bem em sua loja online.',
+      verb: 'vender',
+      tense: 'presente',
+      answers: ['vende'],
+    },
+    {
+      sentence: 'Nós {blank} os produtos na feira todos os sábados.',
+      verb: 'vender',
+      tense: 'presente',
+      answers: ['vendemos'],
+    },
+    {
+      sentence: 'Vocês {blank} bastante frutas na loja hoje.',
+      verb: 'vender',
+      tense: 'presente',
+      answers: ['vendem'],
+    },
+    {
+      sentence: 'Eles {blank} roupas usadas para ajudar os necessitados.',
+      verb: 'vender',
+      tense: 'presente',
+      answers: ['vendem'],
+    },
+    {
+      sentence: 'João {blank} os livros antigos que não precisa mais.',
+      verb: 'vender',
+      tense: 'presente',
+      answers: ['vende'],
+    },
+    {
+      sentence: 'Maria {blank} os artesanatos que faz à mão.',
+      verb: 'vender',
+      tense: 'presente',
+      answers: ['vende'],
+    },
+    {
+      sentence: 'Eu e você {blank} o que não usamos para ganhar espaço.',
+      verb: 'vender',
+      tense: 'presente',
+      answers: ['vendemos'],
+    },
+    {
+      sentence: 'Vocês {blank} serviços de jardinagem na região.',
+      verb: 'vender',
+      tense: 'presente',
+      answers: ['vendem'],
+    },
+    {
+      sentence: 'Ana {blank} bolos para festas de aniversário.',
+      verb: 'vender',
+      tense: 'presente',
+      answers: ['vende'],
+    },
+    {
+      sentence: 'Eu {blank} meu carro ontem.',
+      verb: 'vender',
+      tense: 'pretérito perfeito',
+      answers: ['vendi'],
+    },
+    {
+      sentence: 'Ela {blank} a casa na semana passada.',
+      verb: 'vender',
+      tense: 'pretérito perfeito',
+      answers: ['vendeu'],
+    },
+    {
+      sentence: 'Nós {blank} muitos livros no final do ano.',
+      verb: 'vender',
+      tense: 'pretérito perfeito',
+      answers: ['vendemos'],
+    },
+    {
+      sentence: 'Você {blank} o celular que queria.',
+      verb: 'vender',
+      tense: 'pretérito perfeito',
+      answers: ['vendeu'],
+    },
+    {
+      sentence: 'Os amigos de João {blank} os ingressos para o show.',
+      verb: 'vender',
+      tense: 'pretérito perfeito',
+      answers: ['venderam'],
+    },
+    {
+      sentence: 'Maria {blank} o vestido que estava namorando.',
+      verb: 'vender',
+      tense: 'pretérito perfeito',
+      answers: ['vendeu'],
+    },
+    {
+      sentence: 'Eu e você {blank} nossos produtos na feira.',
+      verb: 'vender',
+      tense: 'pretérito perfeito',
+      answers: ['vendemos'],
+    },
+    {
+      sentence: 'Ela e as amigas {blank} suas roupas antigas.',
+      verb: 'vender',
+      tense: 'pretérito perfeito',
+      answers: ['venderam'],
+    },
+    {
+      sentence: 'Nós {blank} a pintura do artista famoso.',
+      verb: 'vender',
+      tense: 'pretérito perfeito',
+      answers: ['venderam'],
+    },
+    {
+      sentence: 'Você {blank} o carro que estava em promoção.',
+      verb: 'vender',
+      tense: 'pretérito perfeito',
+      answers: ['vendeu'],
+    },
+    {
+      sentence: 'Eu {blank} minha casa no próximo mês.',
+      verb: 'vender',
+      tense: 'futuro',
+      answers: ['venderai', 'vou vender'],
+    },
+    {
+      sentence: 'Ela {blank} os livros na próxima semana.',
+      verb: 'vender',
+      tense: 'futuro',
+      answers: ['venderá', 'vai vender'],
+    },
+    {
+      sentence: 'Nós {blank} o carro depois das férias.',
+      verb: 'vender',
+      tense: 'futuro',
+      answers: ['venderemos', 'vamos vender'],
+    },
+    {
+      sentence: 'Vocês {blank} os produtos em breve.',
+      verb: 'vender',
+      tense: 'futuro',
+      answers: ['venderão', 'vão vender'],
+    },
+    {
+      sentence: 'Maria {blank} a bicicleta nova na próxima primavera.',
+      verb: 'vender',
+      tense: 'futuro',
+      answers: ['venderá', 'vai vender'],
+    },
+    {
+      sentence: 'Eu e João {blank} os nossos serviços na próxima conferência.',
+      verb: 'vender',
+      tense: 'futuro',
+      answers: ['venderemos', 'vamos vender'],
+    },
+    {
+      sentence: 'Tu {blank} os ingressos para o show amanhã.',
+      verb: 'vender',
+      tense: 'futuro',
+      answers: ['venderás', 'vais vender'],
+    },
+    {
+      sentence: 'Eles {blank} a velha coleção de discos no próximo ano.',
+      verb: 'vender',
+      tense: 'futuro',
+      answers: ['venderão', 'vão vender'],
+    },
+    {
+      sentence: 'Você {blank} sua participação na empresa em breve.',
+      verb: 'vender',
+      tense: 'futuro',
+      answers: ['venderá', 'vai vender'],
+    },
+    {
+      sentence:
+        'Ana e eu {blank} as camisetas desenhadas por nós na próxima feira.',
+      verb: 'vender',
+      tense: 'futuro',
+      answers: ['venderemos', 'vamos vender'],
+    },
+  ],
+};

@@ -545,6 +545,226 @@ export const verbsDictionary: { [key: string]: Definition } = {
       description: 'To hold, catch, or grab something.',
     },
   },
+  ter: {
+    description: 'Possuir algo; ter em posse.',
+    en: {
+      translation: 'to have',
+      description: 'To possess something; to have in possession.',
+    },
+  },
+  poder: {
+    description: 'Ter a capacidade ou permissão para fazer algo.',
+    en: {
+      translation: 'can / to be able to',
+      description: 'To have the ability or permission to do something.',
+    },
+  },
+  querer: {
+    description: 'Desejar ou ter a intenção de fazer algo.',
+    en: {
+      translation: 'to want',
+      description: 'To desire or intend to do something.',
+    },
+  },
+  dever: {
+    description: 'Ter obrigação ou necessidade de fazer algo.',
+    en: {
+      translation: 'must / to owe',
+      description: 'To have an obligation or need to do something.',
+    },
+  },
+  haver: {
+    description: 'Existir ou ocorrer; também usado como auxiliar.',
+    en: {
+      translation: 'to exist / to have (auxiliary)',
+      description: 'To exist or occur; also used as an auxiliary verb.',
+    },
+  },
+  dizer: {
+    description: 'Expressar em palavras; falar algo.',
+    en: {
+      translation: 'to say / to tell',
+      description: 'To express in words; to speak something.',
+    },
+  },
+  conseguir: {
+    description: 'Obter ou alcançar algo; ter sucesso em algo.',
+    en: {
+      translation: 'to get / to achieve / to manage to',
+      description: 'To obtain or reach something; to succeed in something.',
+    },
+  },
+  perguntar: {
+    description: 'Fazer uma pergunta; solicitar informação.',
+    en: {
+      translation: 'to ask',
+      description: 'To make a question; to request information.',
+    },
+  },
+  ver: {
+    description: 'Perceber com os olhos; assistir algo.',
+    en: {
+      translation: 'to see',
+      description: 'To perceive with the eyes; to watch something.',
+    },
+  },
+  sentir: {
+    description: 'Experienciar uma emoção ou sensação física.',
+    en: {
+      translation: 'to feel',
+      description: 'To experience an emotion or physical sensation.',
+    },
+  },
+  possuir: {
+    description: 'Ter algo como propriedade; deter algo.',
+    en: {
+      translation: 'to possess / to own',
+      description: 'To have something as property; to hold something.',
+    },
+  },
+  conhecer: {
+    description: 'Estar familiarizado com alguém ou algo; ter conhecimento de.',
+    en: {
+      translation: 'to know / to be acquainted with',
+      description:
+        'To be familiar with someone or something; to have knowledge of.',
+    },
+  },
+  comer: {
+    description: 'Consumir alimentos.',
+    en: {
+      translation: 'to eat',
+      description: 'To consume food.',
+    },
+  },
+  dormir: {
+    description: 'Estar em estado de sono; repousar.',
+    en: {
+      translation: 'to sleep',
+      description: 'To be in a state of sleep; to rest.',
+    },
+  },
+  acordar: {
+    description: 'Despertar do sono; tornar-se acordado.',
+    en: {
+      translation: 'to wake up / to wake someone up',
+      description: 'To awaken from sleep; to make someone awake.',
+    },
+  },
+  usar: {
+    description: 'Fazer uso de algo; utilizar.',
+    en: {
+      translation: 'to use',
+      description: 'To make use of something; to utilize.',
+    },
+  },
+  ajudar: {
+    description: 'Prestar assistência ou suporte a alguém.',
+    en: {
+      translation: 'to help / to assist',
+      description: 'To provide assistance or support to someone.',
+    },
+  },
+  amar: {
+    description: 'Sentir amor por alguém ou algo; gostar muito.',
+    en: {
+      translation: 'to love',
+      description: 'To feel love for someone or something; to like very much.',
+    },
+  },
+  odiar: {
+    description: 'Sentir aversão ou antipatia por alguém ou algo.',
+    en: {
+      translation: 'to hate',
+      description:
+        'To feel aversion or antipathy towards someone or something.',
+    },
+  },
+  andar: {
+    description: 'Mover-se a pé; caminhar.',
+    en: {
+      translation: 'to walk',
+      description: 'To move on foot; to stroll.',
+    },
+  },
+  subir: {
+    description: 'Mover-se para cima; ascender.',
+    en: {
+      translation: 'to go up / to climb',
+      description: 'To move upwards; to ascend.',
+    },
+  },
+  descer: {
+    description: 'Mover-se para baixo; descender.',
+    en: {
+      translation: 'to go down / to descend',
+      description: 'To move downwards; to descend.',
+    },
+  },
+  mudar: {
+    description: 'Alterar ou transformar algo; mudar de lugar.',
+    en: {
+      translation: 'to change',
+      description:
+        'To alter or transform something; to move to a different place.',
+    },
+  },
+  crescer: {
+    description: 'Aumentar de tamanho ou quantidade; desenvolver-se.',
+    en: {
+      translation: 'to grow',
+      description: 'To increase in size or quantity; to develop.',
+    },
+  },
+  diminuir: {
+    description: 'Reduzir de tamanho ou quantidade.',
+    en: {
+      translation: 'to decrease / to reduce',
+      description: 'To lessen in size or quantity.',
+    },
+  },
+  jogar: {
+    description: 'Participar de um jogo ou esporte; lançar algo.',
+    en: {
+      translation: 'to play / to throw',
+      description: 'To participate in a game or sport; to throw something.',
+    },
+  },
+  brincar: {
+    description: 'Engajar-se em atividades lúdicas ou recreativas.',
+    en: {
+      translation: 'to play',
+      description: 'To engage in playful or recreational activities.',
+    },
+  },
+  cantar: {
+    description: 'Produzir música com a voz; entoar canções.',
+    en: {
+      translation: 'to sing',
+      description: 'To produce music with the voice; to perform songs.',
+    },
+  },
+  dançar: {
+    description: 'Mover-se ritmicamente ao som da música.',
+    en: {
+      translation: 'to dance',
+      description: 'To move rhythmically to music.',
+    },
+  },
+  vender: {
+    description: 'Oferecer algo para compra; realizar uma venda.',
+    en: {
+      translation: 'to sell',
+      description: 'To offer something for purchase; to conduct a sale.',
+    },
+  },
+  viver: {
+    description: 'Ter vida; existir; residir em algum lugar.',
+    en: {
+      translation: 'to live',
+      description: 'To have life; to exist; to reside somewhere.',
+    },
+  },
 };
 
 const definitions: { [key: string]: Definition } = {
