@@ -63,7 +63,14 @@ function initFromURL() {
 }
 
 function getFilteredProblems() {
-  return problemData.filter(p => tenseState[p.tense] && (verbState[p.verb] ?? true));
+  const anyVerbSelected = allVerbs.some(v => verbState[v]);
+  const anyTenseSelected = tenses.some(t => tenseState[t]);
+
+  return problemData.filter(p => {
+    const tenseMatch = !anyTenseSelected || tenseState[p.tense];
+    const verbMatch = !anyVerbSelected || (verbState[p.verb] ?? true);
+    return tenseMatch && verbMatch;
+  });
 }
 
 function makeSentenceHTML(sentence) {
@@ -238,7 +245,8 @@ function renderSettingsMenu() {
   const menu = document.getElementById('settings-menu');
 
   let html = '<div class="settings-content" id="settings-content">';
-  html += '<p style="word-break:break-word"><span id="settings-link-text"></span><br><button id="copy-link-btn">copiar link</button></p>';
+  html += '<div class="link-row"><span id="settings-link-text" class="link-text"></span></div>';
+  html += '<button type="button" id="copy-link-btn">copiar link</button>';
 
   html += '<h4>Filtrar Tempos Verbais:</h4>';
   html += '<div class="toggle-container">';
@@ -248,13 +256,21 @@ function renderSettingsMenu() {
   html += '</div>';
 
   html += '<h4>Filtrar Verbos:</h4>';
-  html += '<div class="toggle-container">';
-  html += '<div class="toggle"><button id="select-all-btn">marcar todos</button></div>';
-  html += '<div class="toggle"><button id="deselect-all-btn">desmarcar todos</button></div>';
+  html += '<div class="verb-toolbar">';
+  html += '<input type="search" id="verb-search" placeholder="Buscar verbo..." autocomplete="off">';
+  html += '<div class="verb-toolbar-actions">';
+  html += '<button type="button" id="select-all-btn">marcar todos</button>';
+  html += '<button type="button" id="deselect-all-btn">desmarcar todos</button>';
+  html += '<span id="verb-count"></span>';
+  html += '</div>';
+  html += '</div>';
+
+  html += '<div class="chip-container" id="verb-chip-container">';
   for (const verb of allVerbs) {
-    html += `<div class="toggle"><label><input type="checkbox" data-verb="${escapeHTML(verb)}"${verbState[verb] ? ' checked' : ''}> ${escapeHTML(verb)}</label></div>`;
+    html += `<button type="button" class="chip" data-verb="${escapeHTML(verb)}" aria-pressed="${verbState[verb] ? 'true' : 'false'}">${escapeHTML(verb)}</button>`;
   }
   html += '</div>';
+  html += '<p id="verb-no-match" class="hidden">Nenhum verbo encontrado.</p>';
 
   html += '</div>';
   menu.innerHTML = html;
@@ -265,35 +281,75 @@ function renderSettingsMenu() {
       tenseState[target.dataset.tense] = target.checked;
       updateSettingsLink();
       updateProblemCount();
-    } else if (target.dataset.verb) {
-      verbState[target.dataset.verb] = target.checked;
-      updateSettingsLink();
-      updateProblemCount();
     }
+  });
+
+  document.getElementById('verb-chip-container').addEventListener('click', e => {
+    const chip = e.target.closest('.chip');
+    if (!chip) return;
+    const verb = chip.dataset.verb;
+    const selected = chip.getAttribute('aria-pressed') !== 'true';
+    chip.setAttribute('aria-pressed', String(selected));
+    verbState[verb] = selected;
+    updateVerbCount();
+    updateSettingsLink();
+    updateProblemCount();
   });
 
   document.getElementById('copy-link-btn').addEventListener('click', copyLink);
 
   document.getElementById('select-all-btn').addEventListener('click', () => {
     for (const verb of allVerbs) verbState[verb] = true;
-    document.querySelectorAll('#settings-content input[data-verb]').forEach(cb => { cb.checked = true; });
+    document.querySelectorAll('#verb-chip-container .chip').forEach(chip => chip.setAttribute('aria-pressed', 'true'));
+    updateVerbCount();
     updateSettingsLink();
     updateProblemCount();
   });
 
   document.getElementById('deselect-all-btn').addEventListener('click', () => {
     for (const verb of allVerbs) verbState[verb] = false;
-    document.querySelectorAll('#settings-content input[data-verb]').forEach(cb => { cb.checked = false; });
+    document.querySelectorAll('#verb-chip-container .chip').forEach(chip => chip.setAttribute('aria-pressed', 'false'));
+    updateVerbCount();
     updateSettingsLink();
     updateProblemCount();
   });
 
+  document.getElementById('verb-search').addEventListener('input', e => {
+    filterVerbChips(e.target.value);
+  });
+
+  updateVerbCount();
   updateSettingsLink();
+}
+
+function filterVerbChips(query) {
+  const needle = stripDiacritics(query.trim().toLowerCase());
+  const chips = document.querySelectorAll('#verb-chip-container .chip');
+  let anyVisible = false;
+
+  chips.forEach(chip => {
+    const haystack = stripDiacritics(chip.dataset.verb.toLowerCase());
+    const matches = !needle || haystack.includes(needle);
+    chip.classList.toggle('chip-hidden', !matches);
+    if (matches) anyVisible = true;
+  });
+
+  document.getElementById('verb-no-match').classList.toggle('hidden', anyVisible);
+}
+
+function updateVerbCount() {
+  const countEl = document.getElementById('verb-count');
+  if (!countEl) return;
+  const selected = allVerbs.filter(v => verbState[v]).length;
+  countEl.textContent = `${selected}/${allVerbs.length} selecionados`;
 }
 
 function updateSettingsLink() {
   const el = document.getElementById('settings-link-text');
-  if (el) el.textContent = createLink();
+  if (!el) return;
+  const link = createLink();
+  el.textContent = link;
+  el.title = link;
 }
 
 function createLink() {
