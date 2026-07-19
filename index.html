@@ -6,14 +6,20 @@
 <meta name="robots" content="noindex">
 <link rel="canonical" href="https://portuguese.ethan.computer/">
 <meta http-equiv="refresh" content="0; url=https://portuguese.ethan.computer/">
-<script>window.location.replace("https://portuguese.ethan.computer/");</script>
+<script>
+  var target = "https://portuguese.ethan.computer/" + window.location.search + window.location.hash;
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".fallback-link").forEach(function (a) { a.href = target; });
+  });
+  window.location.replace(target);
+</script>
 <style>
   body { font-family: system-ui, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; text-align: center; padding: 1rem; }
   a { color: #0969da; }
 </style>
 </head>
 <body>
-  <p>Este site mudou. Se você não for redirecionado automaticamente, <a href="https://portuguese.ethan.computer/">clique aqui</a>.<br>
-  This site has moved. If you are not redirected automatically, <a href="https://portuguese.ethan.computer/">click here</a>.</p>
+  <p>Este site mudou. Se você não for redirecionado automaticamente, <a class="fallback-link" href="https://portuguese.ethan.computer/">clique aqui</a>.<br>
+  This site has moved. If you are not redirected automatically, <a class="fallback-link" href="https://portuguese.ethan.computer/">click here</a>.</p>
 </body>
 </html>
